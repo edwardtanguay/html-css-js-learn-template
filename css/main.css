@@ -1,0 +1,13 @@
+body {
+	padding: 1rem 3rem;
+	font-family: sans-serif;
+}
+
+button.reload {
+	margin-top: 2rem;
+	font-size: 1.5rem;
+}
+
+img {
+	border-radius: .5rem;
+}
