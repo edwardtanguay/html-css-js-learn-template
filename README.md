@@ -9,19 +9,25 @@
 - and especially if you are studying to work as a web developer
 	- then spend your time instead learning **JavaScript frameworks**:
 		- [React](https://react.dev) / [Next.js](https://nextjs.org)
-		- Vue / Nuxt
-		- Angular
-		- Svelte
-		- Solid
-		- Remix
-		- Astro
+		- [Vue](https://vuejs.org) / [Nuxt](https://nuxt.com)
+		- [Svelte](https://svelte.dev) / [SvelteKit](https://kit.svelte.dev)
+		- [Angular](https://angular.io)
+		- [Solid](https://www.solidjs.com)
+		- [Remix](https://remix.run)
+		- [Astro](https://astro.build)
+		- [Qwik](https://qwik.builder.io)
 
 ## features
 
+Regardless of the above limitations, this framework will show you how to use HTML/CSS and JavaScript together in a realistic environment to create useful, online websites.
+
 - data sources
-	- as a tool to create websites, this framework should be seen as a display-only solution
-	- however, it shows you have to read from both local and external data
-    	- 1. display data from your own JSON files
-    	- 2. fetch and display data from open APIs that don't have CORS limitations
+    - display rich, structured data from your own JSON files
+    - fetch and display data from open APIs that don't have CORS limitations
 - component based 
+	- learn to program in self-enclosed components that can be reused 
 - easy to publish free at Vercel with a reasonable URL 
+	- literally publish your site to the web in seconds
+- simple page router
+  - enables a navigation bar 
+  - users can link to, bookmark and resturn to specific pages
