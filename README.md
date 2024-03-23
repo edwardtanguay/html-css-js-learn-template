@@ -2,7 +2,9 @@
 
 ## 2024-03-23 CURRENTLY WORKING ON THIS
 
-nnn
+This weekend, my plan is to get this framework finished as a "one-stop template for HTML/CSS/JavaScript sites" while learning web development before one starts with JavaScript Frameworks.
+
+![grafik](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/8f9673a9-22f6-4461-8bfa-497b71df7f9b)
 
 ## project links
 
