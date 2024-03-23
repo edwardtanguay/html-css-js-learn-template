@@ -19,13 +19,14 @@
 
 ## features
 
-Regardless of the above limitations, this framework will show you how to use HTML/CSS and JavaScript together in a realistic environment to create useful, online websites.
+Regardless of the above limitations, if you want to learn the basics of web development, this framework is a good academic exercise showing you how to use HTML, CSS and JavaScript together in a realistic environment to create useful, online-hosted websites.
 
-- data sources
+- read-only data sources
     - display rich, structured data from your own JSON files
     - fetch and display data from open APIs that don't have CORS limitations
 - component based 
-	- learn to program in self-enclosed components that can be reused 
+	- learn to program in self-enclosed components that can be reused
+	- this is an essential feature of JavaScript frameworks
 - easy to publish free at Vercel with a reasonable URL 
 	- literally publish your site to the web in seconds
 - simple page router
