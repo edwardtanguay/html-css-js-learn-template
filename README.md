@@ -2,7 +2,8 @@
 
 ## online
 
-- https://html-css-js-framework.vercel.app
+- repo: https://github.com/edwardtanguay/html-css-js-framework
+- live site: https://html-css-js-framework.vercel.app
 
 ## limitations
 
