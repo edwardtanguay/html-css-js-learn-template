@@ -4,7 +4,7 @@
 
 This weekend, my plan is to get this framework finished as a "one-stop template for HTML/CSS/JavaScript sites" while learning web development before one starts with JavaScript Frameworks.
 
-![grafik](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/8f9673a9-22f6-4461-8bfa-497b71df7f9b)
+![grafik](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/0dd6ee51-d213-4c0d-b272-1402e0f5ff5b)
 
 ## project links
 
