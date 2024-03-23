@@ -7,13 +7,14 @@ export const Nav = () => {
 
 	setTimeout(() => {
 		const navElemLinkElems = document.querySelectorAll("nav a");
-		const pageOutputElem = document.querySelectorAll(".pageOutput");
+		const pageOutputElem = document.querySelector(".pageOutput");
 
 		navElemLinkElems.forEach((linkElem) => {
 			linkElem.addEventListener("click", (event) => {
-				event.preventDefault();
+				console.log('clicked');
 				// onNavigate(linkElem.getAttribute("href"));
 				pageOutputElem.innerHTML = 'it worked';
+				event.preventDefault();
 			});
 		});
 	}, 0);
