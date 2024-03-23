@@ -1,4 +1,18 @@
-- .. determine if self-JSON reading is possible
-- change site to useful, component-based architecture
-	- change to src structure
-- do both courses on vanilla Javascript 
+- x determine if self-JSON reading is possible
+- x change to src structure
+- .. three data sources in appData.js
+	- employees
+		- copy locally
+			- https://edwardtanguay.vercel.app/share/employees.json
+			- images
+	- jobs/skills
+		- (external JSON files)
+		- https://edwardtanguay.vercel.app/share/jobs.json
+		- https://edwardtanguay.vercel.app/share/skills.json
+- .. create router
+	- see: 
+		- https://github.com/edwardtanguay/vite-vanilla-menu/blob/dev/src/Router.ts
+		- https://github.com/edwardtanguay/vite-vanilla-menu/blob/dev/src/App.ts
+- .. change site to useful, component-based architecture
+	- card deck: https://www.deckofcardsapi.com/
+- 

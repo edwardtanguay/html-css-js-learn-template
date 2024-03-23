@@ -1,3 +1,6 @@
+import { AdminPanel } from "./components/AdminPanel.js";
+import { Message } from "./components/Message.js";
+
 const response = await fetch('/src/data/notes.json');
 const notes = await response.json();
 
@@ -9,5 +12,8 @@ ${notes.map(note => {
 	return /*html*/ `<li>${note}</li>`;
 }).join('')}
 </ul>
+
+${Message()}
+${AdminPanel()}
 `;
 
