@@ -22,15 +22,15 @@
 - if you want more functionality
   - e.g. if you want to have a backend CRUD API, to use TypeScript, Sass, Tailwind, axios, etc.
 - and especially if you are studying to work as a web developer
-	- then spend your time instead learning **JavaScript frameworks**:
-		- [React](https://react.dev) / [Next.js](https://nextjs.org)
-		- [Vue](https://vuejs.org) / [Nuxt](https://nuxt.com)
-		- [Svelte](https://svelte.dev) / [SvelteKit](https://kit.svelte.dev)
-		- [Angular](https://angular.io)
-		- [Solid](https://www.solidjs.com)
-		- [Remix](https://remix.run)
-		- [Astro](https://astro.build)
-		- [Qwik](https://qwik.builder.io)
+- then spend your time instead learning **JavaScript frameworks**:
+	- [React](https://react.dev) / [Next.js](https://nextjs.org)
+	- [Vue](https://vuejs.org) / [Nuxt](https://nuxt.com)
+	- [Svelte](https://svelte.dev) / [SvelteKit](https://kit.svelte.dev)
+	- [Angular](https://angular.io)
+	- [Solid](https://www.solidjs.com)
+	- [Remix](https://remix.run)
+	- [Astro](https://astro.build)
+	- [Qwik](https://qwik.builder.io)
 
 ## features
 
