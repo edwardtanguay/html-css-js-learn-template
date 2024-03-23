@@ -13,7 +13,8 @@ export const Nav = () => {
 			linkElem.addEventListener("click", (event) => {
 				console.log('clicked');
 				// onNavigate(linkElem.getAttribute("href"));
-				pageOutputElem.innerHTML = 'it worked';
+				const pageIdCode = linkElem.getAttribute("href");
+				pageOutputElem.innerHTML = 'page: ' + pageIdCode;
 				event.preventDefault();
 			});
 		});
@@ -21,13 +22,13 @@ export const Nav = () => {
 	return /*html*/ `
 <nav>
   <li>
-    <a href="/about">About</a>
-  </li>
-  <li>
     <a href="/">Home</a>
   </li>
   <li>
     <a href="/contact">Contact</a>
+  </li>
+  <li>
+    <a href="/about">About</a>
   </li>
 </nav>
 `;

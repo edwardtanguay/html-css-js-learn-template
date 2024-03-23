@@ -17,3 +17,5 @@
 	- card deck: https://www.deckofcardsapi.com/
 - page: local storage to save a todo list
 
+- make nav page clicking dynamic, see 
+	- https://github.com/edwardtanguay/jsdom-team-project-2023/blob/dev/src/router.ts
