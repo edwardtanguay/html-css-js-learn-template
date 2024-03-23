@@ -2,8 +2,8 @@
 
 ## online
 
-- repo: https://github.com/edwardtanguay/html-css-js-framework
-- live site: https://html-css-js-framework.vercel.app
+- repo: https://github.com/edwardtanguay/html-css-js-template
+- live site: https://html-css-js-template.vercel.app
 
 ![grafik](https://github.com/edwardtanguay/html-css-js-framework/assets/446574/4530cedd-b97a-4268-b1cf-aa4d8a53c4de)
 
