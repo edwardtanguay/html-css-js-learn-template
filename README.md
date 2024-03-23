@@ -5,6 +5,8 @@
 - repo: https://github.com/edwardtanguay/html-css-js-framework
 - live site: https://html-css-js-framework.vercel.app
 
+![grafik](https://github.com/edwardtanguay/html-css-js-framework/assets/446574/4530cedd-b97a-4268-b1cf-aa4d8a53c4de)
+
 ## limitations
 
 - HTML/CSS/JavaScript websites in general have serious limitations in terms of user features and developer experience
