@@ -11,7 +11,7 @@ export const capitalizeAllLetters = (text) => {
 	return text.toUpperCase();
 }
 
-// export default capitalizeAllLetters;
+// export default capitalizeAllLetters; ///
 
 export async function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
