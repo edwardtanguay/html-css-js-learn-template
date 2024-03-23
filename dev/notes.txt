@@ -19,3 +19,18 @@
 
 - make nav page clicking dynamic, see 
 	- https://github.com/edwardtanguay/jsdom-team-project-2023/blob/dev/src/router.ts
+
+
+- maybe
+	- implement browser history
+		---------------------------------------------------------
+		window.onpopstate = () => {
+			const pageOutputElem = document.querySelector(".pageOutput");
+			pageOutputElem.innerHTML = routes[window.location.pathname] || routes["/"];
+		};
+
+		const onNavigate = (pageIdCode) => {
+			window.history.pushState({}, pageIdCode, window.location.origin + pageIdCode);
+		};
+		---------------------------------------------------------
+

@@ -3,12 +3,6 @@ import { PageContact } from '../pages/PageContact.js';
 import { PageAbout } from '../pages/PageAbout.js';
 
 export const Nav = () => {
-
-	const onNavigate = (pathname) => {
-		window.history.pushState({}, pathname, window.location.origin + pathname);
-		// mainElem.innerHTML = routes[pathname];
-	};
-
 	setTimeout(() => {
 		const navElemLinkElems = document.querySelectorAll("nav a");
 		const pageOutputElem = document.querySelector(".pageOutput");
@@ -16,7 +10,6 @@ export const Nav = () => {
 		navElemLinkElems.forEach((linkElem) => {
 			linkElem.addEventListener("click", (event) => {
 				console.log('clicked');
-				// onNavigate(linkElem.getAttribute("href"));
 				const pageIdCode = linkElem.getAttribute("href");
 				let html = '';
 				switch (pageIdCode) {
