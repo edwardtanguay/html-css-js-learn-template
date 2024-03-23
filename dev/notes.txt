@@ -1,10 +1,4 @@
-- refactor site so that all components are like AdminPanel
-	- refactor CharacterPanel
-	- refactor button in index.html
-	- innerHTML line
-
-
-
-- make admin area with dropdown with 3 colors and button "change background"
-	- make admin area with mock dropdown 
-- drop menu admin area
+- .. determine if self-JSON reading is possible
+- change site to useful, component-based architecture
+	- change to src structure
+- do both courses on vanilla Javascript 
