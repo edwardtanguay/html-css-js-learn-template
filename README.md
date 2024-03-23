@@ -6,6 +6,8 @@ This weekend, my plan is to get this project finished as a "one-stop template fo
 
 ![grafik](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/0dd6ee51-d213-4c0d-b272-1402e0f5ff5b)
 
+This template is part of [Edward's tech starters](https://tanguay-eu.vercel.app/starters) project.
+
 ## project links
 
 - repo: https://github.com/edwardtanguay/html-css-js-learn-template
