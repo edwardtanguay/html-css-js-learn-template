@@ -1,6 +1,6 @@
 # html-css-js-framework
 
-## online
+## project links
 
 - repo: https://github.com/edwardtanguay/html-css-js-template
 - live site: https://html-css-js-template.vercel.app
