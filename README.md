@@ -8,7 +8,7 @@
   - e.g. if you want to have a backend CRUD API, to use TypeScript, Sass, Tailwind, axios, etc.
 - and especially if you are studying to work as a web developer
 	- then spend your time instead learning **JavaScript frameworks**:
-		- React / Next.js
+		- [React](https://react.dev) / [Next.js](https://nextjs.org)
 		- Vue / Nuxt
 		- Angular
 		- Svelte
