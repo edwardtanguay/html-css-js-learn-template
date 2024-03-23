@@ -15,4 +15,5 @@
 		- https://github.com/edwardtanguay/vite-vanilla-menu/blob/dev/src/App.ts
 - .. change site to useful, component-based architecture
 	- card deck: https://www.deckofcardsapi.com/
-- 
+- page: local storage to save a todo list
+
