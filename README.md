@@ -44,7 +44,7 @@ This template is part of [Edward's tech starters](https://tanguay-eu.vercel.app/
 
 ## features
 
-Regardless of the above limitations, if you want to learn the basics of web development, this framework is a good academic exercise showing you how to use HTML, CSS and JavaScript together in a realistic environment to create useful, online-hosted websites.
+Regardless of the above limitations, if you want to learn the basics of web development, this template is a good academic exercise showing you how to use HTML, CSS and JavaScript together in a realistic environment to create useful, online-hosted websites.
 
 - read-only data sources
     - display rich, structured data from your own JSON files
