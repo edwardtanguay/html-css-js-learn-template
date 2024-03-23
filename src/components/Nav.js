@@ -1,9 +1,13 @@
+import { PageHome } from '../pages/PageHome.js';
+import { PageContact } from '../pages/PageContact.js';
+import { PageAbout } from '../pages/PageAbout.js';
+
 export const Nav = () => {
 
 	const onNavigate = (pathname) => {
 		window.history.pushState({}, pathname, window.location.origin + pathname);
 		// mainElem.innerHTML = routes[pathname];
-	}
+	};
 
 	setTimeout(() => {
 		const navElemLinkElems = document.querySelectorAll("nav a");
@@ -14,7 +18,19 @@ export const Nav = () => {
 				console.log('clicked');
 				// onNavigate(linkElem.getAttribute("href"));
 				const pageIdCode = linkElem.getAttribute("href");
-				pageOutputElem.innerHTML = 'page: ' + pageIdCode;
+				let html = '';
+				switch (pageIdCode) {
+					case '/':
+						html = PageHome();
+						break;
+					case '/contact':
+						html = PageContact();
+						break;
+					case '/about':
+						html = PageAbout();
+						break;
+				}
+				pageOutputElem.innerHTML = html;
 				event.preventDefault();
 			});
 		});
