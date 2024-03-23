@@ -8,7 +8,7 @@ export const getCharacters = () => {
 				const data = await response.json();
 				const characters = data.results;
 				if (response.ok) {
-				// if (response.status === 200) {
+					// if (response.status === 200) {
 					resolve(characters);
 				} else {
 					console.log('ERROR', e);

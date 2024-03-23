@@ -27,6 +27,8 @@ Regardless of the above limitations, if you want to learn the basics of web deve
 - component based 
 	- learn to program in self-enclosed components that can be reused
 	- this is an essential feature of JavaScript frameworks
+- modern directory structure
+  - with /src directory, similar to JavaScript frameworks
 - easy to publish free at Vercel with a reasonable URL 
 	- literally publish your site to the web in seconds
 - simple page router
