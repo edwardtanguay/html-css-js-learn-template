@@ -32,3 +32,7 @@ Regardless of the above limitations, if you want to learn the basics of web deve
 - simple page router
   - enables a navigation bar 
   - users can link to, bookmark and resturn to specific pages
+- interactive components
+  - search forms
+- local-storage CRUD
+  - one page shows how you can allow a user to create/read/update/delete data which is stored in the browser
