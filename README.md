@@ -7,6 +7,12 @@
 
 ![grafik](https://github.com/edwardtanguay/html-css-js-framework/assets/446574/4530cedd-b97a-4268-b1cf-aa4d8a53c4de)
 
+## setup and start
+
+- clone locally
+- install VSCode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
+- right-click HTML, **
+
 ## limitations
 
 - HTML/CSS/JavaScript websites in general have serious limitations in terms of user features and developer experience
