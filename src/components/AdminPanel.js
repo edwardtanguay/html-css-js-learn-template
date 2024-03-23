@@ -1,3 +1,5 @@
+import { Message } from "./Message.js";
+
 export const AdminPanel = () => {
 
 	setTimeout(() => {
@@ -19,6 +21,7 @@ export const AdminPanel = () => {
 		<option value="#ccc">Light gray</option>
 		<option value="#888">Dark gray</option>
 	</select> 
+	${Message()}
 </section>
 	`;
 };
