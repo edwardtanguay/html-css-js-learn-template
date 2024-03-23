@@ -11,7 +11,9 @@
 
 - clone locally
 - install VSCode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
-- right-click HTML, **
+- right-click on `index.html` then **Open with Live Server**
+
+![grafik](https://github.com/edwardtanguay/html-css-js-template/assets/446574/f54205f9-1ad7-4d5f-9ba9-333a8921b05d)
 
 ## limitations
 
