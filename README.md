@@ -1,4 +1,4 @@
-# html-css-js-framwork
+# html-css-js-framework
 
 ## purpose
 
