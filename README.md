@@ -2,7 +2,7 @@
 
 ## 2024-03-23 CURRENTLY WORKING ON THIS
 
-This weekend, my plan is to get this framework finished as a "one-stop template for HTML/CSS/JavaScript sites" while learning web development before one starts with JavaScript Frameworks.
+This weekend, my plan is to get this project finished as a "one-stop template for HTML/CSS/JavaScript sites" for people learning web development before they start with JavaScript Frameworks. The idea is: if you are learning HTML/CSS/JavaScript, then build websites with this structure since it is a pathway toward the structure of JavaScript frameworks.
 
 ![grafik](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/0dd6ee51-d213-4c0d-b272-1402e0f5ff5b)
 
