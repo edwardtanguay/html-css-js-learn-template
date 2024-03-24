@@ -1,5 +1,7 @@
 - x determine if self-JSON reading is possible
 - x change to src structure
+- .. fix router
+	- https://et778-version2-vanilla-js-spa.vercel.app
 - .. create router
 	- see: 
 		- https://github.com/edwardtanguay/vite-vanilla-menu/blob/dev/src/Router.ts
