@@ -24,7 +24,7 @@ ${notes.map(note => {
 </ul>
 
 <h2>Image test</h2>
-<img src="public/images/test.png"/>
+<img src="src/images/test.png"/>
 
 ${Message()}
 `;

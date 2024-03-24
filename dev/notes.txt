@@ -3,6 +3,7 @@
 - .. fix router
 	- timo's site: https://et778-version2-vanilla-js-spa.vercel.app
 	- my site: https://html-css-js-learn-template.vercel.app
+	- TEST SITE: https://test88962.vercel.app
 - .. create router
 	- see: 
 		- https://github.com/edwardtanguay/vite-vanilla-menu/blob/dev/src/Router.ts
