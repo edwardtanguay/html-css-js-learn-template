@@ -47,10 +47,10 @@ export const Nav = () => {
 		<a class="active" href="/">Home</a>
 	</li>
 	<li>
-		<a href="/apidata">API Data</a>
+		<a href="/localdata">Local JSON Data</a>
 	</li>
 	<li>
-		<a href="/localdata">Local Data</a>
+		<a href="/apidata">External API Data</a>
 	</li>
 	<li>
 		<a href="/localstorage">Local Storage</a>

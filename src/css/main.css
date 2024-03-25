@@ -1,7 +1,6 @@
 body {
 	padding: 2rem;
 	font-family: sans-serif;
-	background-color: #ccc;
 }
 
 h1 {
@@ -30,8 +29,26 @@ nav ul li a.active {
 	color: rgb(158, 59, 2);
 }
 
-
 button.reload {
 	margin-top: 2rem;
 	font-size: 1.5rem;
+}
+
+p {
+	line-height: 2.5rem;
+	margin-bottom: .7rem;
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+	body {
+		background-color: white;
+	}
+}
+
+/* computer */
+@media screen and (min-width: 768px) {
+	body {
+		background-color: #ccc;
+	}
 }
