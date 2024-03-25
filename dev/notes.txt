@@ -2,9 +2,7 @@
 	- REPO: https://github.com/edwardtanguay/html-css-js-learn-template
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
-- .. github icon and link
-
-- api data page
+- .. api data page
 	- jobs/skills
 		- (external JSON files)
 		- https://edwardtanguay.vercel.app/share/jobs.json
