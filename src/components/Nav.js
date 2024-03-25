@@ -14,9 +14,14 @@ export const Nav = () => {
 			linkElem.addEventListener("click", (event) => {
 				const pageIdCode = linkElem.getAttribute("href");
 				const navMenuElem = document.querySelector(`nav ul li a[href="${pageIdCode}"`);
+				const navMobileElem = document.querySelector('nav.mobile');
+
+				navMobileElem.style.display = 'none';
+
 				navElemLinkElems.forEach((linkElem) => {
 					linkElem.classList.remove('active');
 				});
+
 				navMenuElem.classList.add('active');
 				let html = '';
 				switch (pageIdCode) {

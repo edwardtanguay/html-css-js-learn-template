@@ -44,6 +44,10 @@ header {
 
 /* mobile */
 @media screen and (max-width: 767px) {
+	header {
+		margin-bottom: 1.5rem;
+	}
+
 	nav.mobile {
 		margin-bottom: 1.5rem;
 		background-color: #aaa;
@@ -69,10 +73,10 @@ header {
 /* computer */
 @media screen and (min-width: 768px) {
 	nav.computer {
-		margin-bottom: 1.5rem;
 		background-color: #aaa;
 		padding: .5rem;
 		display: block;
+		margin-bottom: 1rem;
 	}
 
 	nav.computer ul {
@@ -94,5 +98,8 @@ header {
 		margin-bottom: .7rem;
 	}
 
+	header {
+		margin-bottom: 1rem;
+	}
 
 }
