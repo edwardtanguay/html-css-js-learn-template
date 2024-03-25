@@ -1,7 +1,7 @@
 export const PageHome = () => {
 	return /*html*/ `
 	<section class="page pageHome">
-<p>This site is a template for sites created with HTML, CSS and JavaScript files.</p>
+<p>This site is a template for sites created only with HTML, CSS and JavaScript files.</p>
 
 <h2>Purpose</h2>
 <ul>

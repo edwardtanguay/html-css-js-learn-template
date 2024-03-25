@@ -1,4 +1,5 @@
 import * as appData from '../appData.js';
+import { Employees } from '../components/Employees.js';
 import { Loading } from '../components/Loading.js';
 
 export const PageLocalData = () => {
@@ -7,7 +8,7 @@ export const PageLocalData = () => {
 		const pageElem = document.querySelector('.pageLocalData');
 		const employees = await appData.getEmployees();
 
-		pageElem.innerHTML = `There are ${employees.length} employees.`;
+		pageElem.innerHTML = Employees(employees);
 
 	}, 0);
 

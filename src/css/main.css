@@ -96,6 +96,10 @@ i {
 	}
 }
 
+.page {
+	padding-top: .5rem;
+}
+
 .page ul {
 	list-style: disc;
 	margin-left: 1rem;
@@ -138,6 +142,20 @@ blockquote {
 
 .githubLinkArea a {
 	color: #000;
+}
+
+/* EMPLOYEES */
+div.employees {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+div.employee {
+	background-color: #777;
+	padding: 1rem;
+	border-radius: .5rem;
+	width: 20rem;
 }
 
 /* mobile */
