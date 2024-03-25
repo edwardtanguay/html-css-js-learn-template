@@ -37,6 +37,7 @@ export const PageHome = () => {
 	<li>you <b>cannot install npm packages</b> as you can in JavaScript Frameworks</li>
 	<li>not being able to install npm packages means that you <b>cannot use advanced web development tools such as TypeScript, Sass, Tailwind, Zod, testing frameworks, etc.</b> or if you do, they are cumbersome to set up (TypeScript, Sass, testing frameworks) or are officially not recommended for HTML/CSS/JavaScript sites (Tailwind)</li>
 	<li>Router has <b>no page bookmarking</b> and <b>no page refreshing</b> support, i.e. the URL does not reflect which page the user is on and so cannot bring the user back to the same page when clicking a bookmark or refreshing the page, and this is not possible since there is no Node server present as there is in JavaScript frameworks</li>
+	<li>Router can display <b>no 404 pages</b></li>
 	<li>no <b>state variable support</b> which means adding interactivity to the site (with addEventListener) becomes exponentially complex</li>
 	<li>VSCode <b>cannot auto-format HTML</b> in string literals:
 		<img class="siteImage" src="src/images/noautoformat.png"/>

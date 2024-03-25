@@ -205,6 +205,19 @@ div.employee .notes {
 	line-height: 1.3rem;
 }
 
+div.errorMessage {
+	background-color: rgb(192, 31, 2);
+	color: yellow;
+	padding: 1rem 1rem .1rem 1rem;
+	border-radius: .5rem;
+	width:fit-content;
+}
+
+div.errorMessage h3 {
+	color: black;
+	font-weight: bold;
+}
+
 /* mobile */
 @media screen and (max-width: 767px) {
 	header {

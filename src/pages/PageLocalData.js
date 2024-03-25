@@ -6,9 +6,14 @@ export const PageLocalData = () => {
 
 	setTimeout(async () => {
 		const contentElem = document.querySelector('.pageLocalData .content');
-		const employees = await appData.getEmployees();
 
-		contentElem.innerHTML = Employees(employees);
+		try {
+			const employees = await appData.getEmployees();
+			contentElem.innerHTML = Employees(employees);
+		}
+		catch (e) {
+			contentElem.innerHTML = '<div class="errorMessage">' + e.message + '</div>';
+		}
 
 	}, 0);
 
