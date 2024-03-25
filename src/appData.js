@@ -17,7 +17,6 @@ export const getEmployees = () => {
 				console.log('ERROR', e);
 				reject({ message: generalErrorMessage() });
 			}
-		}, 1000);
-
+		}, 0);
 	});
 };
