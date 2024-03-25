@@ -169,6 +169,8 @@ div.employee .employeeHeader {
 	align-items: center;
 	background-color: #8b8888;
 	border-radius: .5rem;
+	border: 1px solid #666;
+	margin-bottom: .5rem;
 }
 
 div.employee .employeeInfo {
@@ -186,10 +188,16 @@ div.employee .innerEmployeeInfo {
 
 div.employee .fullName {
 	font-weight: bold;
+	margin-bottom: .3rem;
 }
 
 div.employee .title {
 	font-style: italic;
+}
+
+div.employee .notes {
+	font-style: italic;
+	line-height: 1.3rem;
 }
 
 /* mobile */

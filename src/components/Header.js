@@ -28,7 +28,7 @@ export const Header = () => {
 
 	return /*html*/ `
 <header>
-<h1><a href="/">Info Site</a></h1>
+<h1><a href="/">HTML/CSS/JS Site</a></h1>
 <span class="menuIcon"><i class="fa fa-bars" aria-hidden="true"></i></span>
 </header>
 	`;
