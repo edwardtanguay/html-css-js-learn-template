@@ -80,7 +80,6 @@ i {
 	gap: .4rem;
 	font-size: 1.4rem;
 	color: #777;
-	padding: .5rem;
 }
 
 .spinner {
@@ -173,6 +172,11 @@ blockquote {
 		width: 100%;
 	}
 
+	.loading {
+		padding: .1rem;
+	}
+
+
 }
 
 /* computer */
@@ -205,6 +209,10 @@ blockquote {
 
 	blockquote {
 		width: 20rem;
+	}
+
+	.loading {
+		padding: .5rem;
 	}
 
 }
