@@ -6,7 +6,7 @@ export const PageHome = () => {
 <h2>Purpose</h2>
 <ul>
 	<li>to give you a useful HTML/CSS/JS <b>starter site</b> with many <b>features</b></li>
-	<li>to make you aware of the <b>limitations</b> of HTML/CSS/JavaScript sites (sites you can start in the browser or with VSCode's Live Server extension)</li> 
+	<li>to make you aware of the <b>limitations</b> of HTML/CSS/JavaScript sites (sites you can start in the browser or with VSCode's Live Server extension)</li>
 	<li>to make the reasons clear why as a web developer you should instead learn <b>JavaScript frameworks</b>, e.g. React, Vue, Angular (sites which require Node and which you start with <code>npm run dev</code>)</li>
 	<li>to allow you to work in a HTML/CSS/JavaScript site that has a <b>similar structure</b> to JavaScript frameworks</li>
 </ul>
@@ -29,7 +29,9 @@ export const PageHome = () => {
 	<li>you <b>cannot install npm packages</b> as you can in JavaScript Frameworks, which means that technologies such as TypeScript, Sass, Tailwind, testing frameworks, etc. are cumbersome to install and maintain</li>
 	<li>Router has <b>no page bookmarking</b> and <b>no page refreshing</b> support, i.e. the URL does not reflect which page the user is on and so cannot bring the user back to the same page when clicking a bookmark or refreshing the page, and this is not possible since there is no Node server present as there is in JavaScript frameworks</li>
 	<li>no <b>state variable support</b> which means adding interactivity to the site becomes exponentially complex</li>
-	<li>VSCode <b>cannot auto-format HTML</b> in string literals</li>
+	<li>VSCode <b>cannot auto-format HTML</b> in string literals:
+		<img src="src/images/noautoformat.png"/>
+	</li>
 </ul>
 
 </div>

@@ -82,6 +82,13 @@ b {
 	line-height: 1.3rem;
 }
 
+img {
+	display: block;
+	margin-top: .5rem;
+	border-radius: .5rem;
+}
+
+
 /* mobile */
 @media screen and (max-width: 767px) {
 	header {
@@ -108,6 +115,10 @@ b {
 	p {
 		line-height: 1.4rem;
 		margin-bottom: .7rem;
+	}
+
+	img {
+		width: 100%;
 	}
 }
 
@@ -138,5 +149,4 @@ b {
 	header {
 		margin-bottom: 1rem;
 	}
-
 }
