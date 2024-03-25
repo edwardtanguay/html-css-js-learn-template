@@ -5,6 +5,7 @@ export const PageHome = () => {
 	<li>give you a useful HTML/CSS/JS starter site with various features:
 		<ul>
 			<li>responsive</li>
+			<li>Font Awesome icons</li>
 			<li>simple Router</li>	
 			<li>fetch and display in local JSON files</li>	
 			<li>fetch and display third-party API data</li>	
