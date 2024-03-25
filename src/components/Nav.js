@@ -1,6 +1,7 @@
 import { PageHome } from '../pages/PageHome.js';
 import { PageApiData } from '../pages/PageApiData.js';
 import { PageLocalData } from '../pages/PageLocalData.js';
+import { PageLocalStorage } from '../pages/PageLocalStorage.js';
 import { PageAbout } from '../pages/PageAbout.js';
 
 export const Nav = () => {
@@ -21,11 +22,14 @@ export const Nav = () => {
 					case '/':
 						html = PageHome();
 						break;
-					case '/api-data':
+					case '/apidata':
 						html = PageApiData();
 						break;
-					case '/local-data':
+					case '/localdata':
 						html = PageLocalData();
+						break;
+					case '/localstorage':
+						html = PageLocalStorage();
 						break;
 					case '/about':
 						html = PageAbout();
@@ -43,10 +47,13 @@ export const Nav = () => {
 		<a class="active" href="/">Home</a>
 	</li>
 	<li>
-		<a href="/api-data">API Data</a>
+		<a href="/apidata">API Data</a>
 	</li>
 	<li>
-		<a href="/local-data">Local Data</a>
+		<a href="/localdata">Local Data</a>
+	</li>
+	<li>
+		<a href="/localstorage">Local Storage</a>
 	</li>
 	<li>
 		<a href="/about">About</a>
