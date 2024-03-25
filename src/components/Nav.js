@@ -5,11 +5,10 @@ import { PageAbout } from '../pages/PageAbout.js';
 export const Nav = () => {
 	setTimeout(() => {
 		const navElemLinkElems = document.querySelectorAll("nav a");
-		const pageOutputElem = document.querySelector(".pageOutput");
+		const pageOutletElem = document.querySelector(".pageOutlet");
 
 		navElemLinkElems.forEach((linkElem) => {
 			linkElem.addEventListener("click", (event) => {
-				console.log('clicked');
 				const pageIdCode = linkElem.getAttribute("href");
 				let html = '';
 				switch (pageIdCode) {
@@ -23,7 +22,7 @@ export const Nav = () => {
 						html = PageAbout();
 						break;
 				}
-				pageOutputElem.innerHTML = html;
+				pageOutletElem.innerHTML = html;
 				event.preventDefault();
 			});
 		});

@@ -8,6 +8,6 @@ export const Outlet = () => {
 	console.log('url2', url2);
 
 	return /*html*/ `
-		<section class="pageOutput">${PageHome()}</section>
+		<section class="pageOutlet">${PageHome()}</section>
 	`;
 }
