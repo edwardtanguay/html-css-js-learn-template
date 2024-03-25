@@ -1,6 +1,6 @@
 import { PageHome } from "../pages/PageHome.js";
 
-export const PageOutput = () => {
+export const Outlet = () => {
 	const url = window.location.pathname;
 	console.log('url', url);
 
