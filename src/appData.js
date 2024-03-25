@@ -1,15 +1,13 @@
 import { generalErrorMessage } from "./config.js";
 
-export const getCharacters = () => {
+export const getNotes = () => {
 	return new Promise((resolve, reject) => {
 		setTimeout(async () => {
 			try {
-				const response = await fetch('https://rickandmortyapi.com/api/character');
-				const data = await response.json();
-				const characters = data.results;
+				const response = await fetch('/src/data/notes.json');
+				const notes = await response.json();
 				if (response.ok) {
-					// if (response.status === 200) {
-					resolve(characters);
+					resolve(notes);
 				} else {
 					console.log('ERROR', e);
 					reject({ message: generalErrorMessage() });

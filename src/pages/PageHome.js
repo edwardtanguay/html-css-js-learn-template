@@ -1,6 +1,6 @@
 export const PageHome = () => {
 	return /*html*/ `
-	<div class="page pageHome">
+	<section class="page pageHome">
 <p>This site is a template for sites created with HTML, CSS and JavaScript files.</p>
 
 <h2>Purpose</h2>
@@ -39,6 +39,6 @@ export const PageHome = () => {
 	</li>
 </ul>
 
-</div>
+</section>
 	`;
 };
