@@ -89,7 +89,9 @@ const convertSkillListToSkills = (skillList, skills, job) => {
 		if (skill) {
 			const jobSkill = {
 				idCode: skillIdCode,
-				name: skill.name
+				name: skill.name,
+				url: skill.url,
+				description: skill.description
 			};
 			jobSkills.push(jobSkill);
 		} else {

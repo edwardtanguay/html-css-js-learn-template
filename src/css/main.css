@@ -210,7 +210,7 @@ div.errorMessage {
 	color: yellow;
 	padding: 1rem 1rem .1rem 1rem;
 	border-radius: .5rem;
-	width:fit-content;
+	width: fit-content;
 }
 
 div.errorMessage h3 {
@@ -223,18 +223,28 @@ div.errorMessage h3 {
 div.fullJobs {
 	display: flex;
 	gap: 1rem;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 div.fullJob {
 	background-color: #ddd;
-	padding: 1rem;
-	width: 25rem;
+	padding: 1.5rem;
+	width: 50rem;
+	border-radius: .5rem;
+	border: 1px solid #aaa;
+}
+
+div.fullJob .header {
+	background-color: #ccc;
+	padding: .8rem;
+	border-radius: .5rem;
+	border: 1px solid #aaa;
+	margin-bottom: 1rem;
 }
 
 div.fullJob .title {
 	font-weight: bold;
-	margin-bottom: .2rem;
+	margin-bottom: .3rem;
 }
 
 div.fullJob .title a {
@@ -247,9 +257,20 @@ div.fullJob .title a:hover {
 }
 
 div.fullJob .company {
-	color: brown;
-	margin-bottom: .2rem;
+	margin-bottom: .3rem;
 }
+
+div.fullJob .skill a {
+	color: brown;
+	margin-bottom: .3rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div.fullJob .skill a:hover {
+	text-decoration: underline;
+}
+
 
 
 /* mobile */
