@@ -5,7 +5,6 @@ import { Outlet } from "./components/Outlet.js";
 document.querySelector('#app').innerHTML = /*html*/ `
 <h1>Info Site</h1>
 ${Nav()}
-<hr>
 ${Outlet()}
 `;
 
