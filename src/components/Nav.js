@@ -3,6 +3,7 @@ import { PageApiData } from '../pages/PageApiData.js';
 import { PageLocalData } from '../pages/PageLocalData.js';
 import { PageLocalStorage } from '../pages/PageLocalStorage.js';
 import { PageSite } from '../pages/PageSite.js';
+import { MenuContent } from './MenuContent.js';
 
 export const Nav = () => {
 	setTimeout(() => {
@@ -41,24 +42,11 @@ export const Nav = () => {
 		});
 	}, 0);
 	return /*html*/ `
-<nav>
-	<ul>
-	<li>
-		<a class="active" href="/">Home</a>
-	</li>
-	<li>
-		<a href="/localdata">Local JSON Data</a>
-	</li>
-	<li>
-		<a href="/apidata">External API Data</a>
-	</li>
-	<li>
-		<a href="/localstorage">Local Storage</a>
-	</li>
-	<li>
-		<a href="/site">Settings</a>
-	</li>
-	</ul>
+<nav class="mobile">
+	${MenuContent()}
+</nav>
+<nav class="computer">
+	${MenuContent()}
 </nav>
 `;
 };
