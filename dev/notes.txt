@@ -8,7 +8,8 @@
 		- https://edwardtanguay.vercel.app/share/jobs.json
 		- https://edwardtanguay.vercel.app/share/skills.json
 	- x getFullJobs()
-	- .. build and style FullJob
+	- x build and style FullJob
+	- .. search jobs
 
 - localstorage page
 	- flashcards

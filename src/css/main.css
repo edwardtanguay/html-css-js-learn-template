@@ -271,6 +271,18 @@ div.fullJob .skill a:hover {
 	text-decoration: underline;
 }
 
+.pageApiData .searchArea {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.pageApiData .searchArea input {
+	font-size: 2rem;
+}
+
+.pageApiData .searchArea input::placeholder {
+	color: #aaa;
+}
 
 
 /* mobile */
