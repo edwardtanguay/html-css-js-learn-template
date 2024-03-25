@@ -35,7 +35,7 @@ export const PageHome = () => {
 	<li>Router has <b>no page bookmarking</b> and <b>no page refreshing</b> support, i.e. the URL does not reflect which page the user is on and so cannot bring the user back to the same page when clicking a bookmark or refreshing the page, and this is not possible since there is no Node server present as there is in JavaScript frameworks</li>
 	<li>no <b>state variable support</b> which means adding interactivity to the site (with addEventListener) becomes exponentially complex</li>
 	<li>VSCode <b>cannot auto-format HTML</b> in string literals:
-		<img src="src/images/noautoformat.png"/>
+		<img class="siteImage" src="src/images/noautoformat.png"/>
 	</li>
 </ul>
 

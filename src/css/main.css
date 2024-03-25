@@ -114,7 +114,7 @@ i {
 	line-height: 1.3rem;
 }
 
-img {
+img.siteImage {
 	display: block;
 	margin-top: .5rem;
 	border-radius: .5rem;
@@ -156,6 +156,31 @@ div.employee {
 	padding: 1rem;
 	border-radius: .5rem;
 	width: 20rem;
+}
+
+div.employee img {
+	width: 5rem;
+	border-top-left-radius: .5rem;
+	border-bottom-left-radius: .5rem;
+}
+
+div.employee .employeeHeader {
+	display: flex;
+	align-items: center;
+	background-color: #8b8888;
+	border-radius: .5rem;
+}
+
+div.employee .employeeInfo {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+div.employee .innerEmployeeInfo {
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
 /* mobile */
