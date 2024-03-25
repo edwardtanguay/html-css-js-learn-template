@@ -9,11 +9,11 @@ export const FullJobs = (fullJobs) => {
 	}, 0);
 
 	return /*html*/ `
-	<div class="computerSearchArea">
+	<div class="searchArea computerSearchArea">
 		Search <input class="searchText" placeholder="skill" /> in ${fullJobs.length} Jobs
 	</div>
-	<div class="mobileSearchArea">
-		Search in ${fullJobs.length} Jobs
+	<div class="searchArea mobileSearchArea">
+		Search in ${fullJobs.length} Jobs:
 		<div>
 		<input class="searchText" placeholder="skill" /> 
 		</div>

@@ -229,7 +229,6 @@ div.fullJobs {
 div.fullJob {
 	background-color: #ddd;
 	padding: 1.5rem;
-	width: 50rem;
 	border-radius: .5rem;
 	border: 1px solid #aaa;
 }
@@ -272,7 +271,7 @@ div.fullJob .skill a:hover {
 }
 
 .pageApiData .searchArea {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .pageApiData .searchArea input::placeholder {
@@ -318,20 +317,21 @@ div.fullJob .skill a:hover {
 
 	.pageApiData .searchArea input {
 		font-size: 1.5rem;
-		width: 100%;
+		width: 97%;
 		margin-top: .3rem;
 		margin-bottom: .3rem;
 	}
 
 	.pageApiData .searchArea {
-		font-size: 1.7rem;
+		font-size: 1.3rem;
 	}
 
 	.computerSearchArea {
-		display:none;
+		display: none;
 	}
+
 	.mobileSearchArea {
-		display:block;
+		display: block;
 	}
 
 }
@@ -377,9 +377,14 @@ div.fullJob .skill a:hover {
 	}
 
 	.computerSearchArea {
-		display:block;
+		display: block;
 	}
+
 	.mobileSearchArea {
-		display:none;
+		display: none;
+	}
+
+	.fullJob {
+		width: 50rem;
 	}
 }
