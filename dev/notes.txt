@@ -36,3 +36,4 @@
 	- make dark mode switch
 
 - correct all pageIdCodes
+- copy home page text to 

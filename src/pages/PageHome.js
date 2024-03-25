@@ -25,7 +25,7 @@ export const PageHome = () => {
 
 <h2>Limitations</h2>
 <ul>
-	<li>nnn</li>
+	<li>Router does not support <b>bookmarking</b> and user will not stay on the same page if they <p>refresh</p> the page</li>
 </ul>
 
 </div>
