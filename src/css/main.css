@@ -79,7 +79,7 @@ i {
 	display: flex;
 	gap: .4rem;
 	font-size: 1.4rem;
-	color: #777;
+	color: #555;
 }
 
 .spinner {
@@ -232,10 +232,6 @@ div.employee .notes {
 		width: 100%;
 	}
 
-	.loading {
-		padding: .1rem;
-	}
-
 
 }
 
@@ -269,10 +265,6 @@ div.employee .notes {
 
 	blockquote {
 		width: 20rem;
-	}
-
-	.loading {
-		padding: .5rem;
 	}
 
 }

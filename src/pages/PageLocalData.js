@@ -5,16 +5,19 @@ import { Loading } from '../components/Loading.js';
 export const PageLocalData = () => {
 
 	setTimeout(async () => {
-		const pageElem = document.querySelector('.pageLocalData');
+		const contentElem = document.querySelector('.pageLocalData .content');
 		const employees = await appData.getEmployees();
 
-		pageElem.innerHTML = Employees(employees);
+		contentElem.innerHTML = Employees(employees);
 
 	}, 0);
 
 	return /*html*/ `
 	<section class="page pageLocalData">
-		${Loading()}
+		<p>This page loads data asynchronously from a local JSON file via fetch.</p>
+		<div class="content">
+			${Loading()}
+		</div>
 	</section>
 	`;
 };
