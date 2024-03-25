@@ -26,6 +26,10 @@ nav ul li a {
 	color: #222;
 }
 
+nav ul li a.active {
+	color: rgb(158, 59, 2);
+}
+
 
 button.reload {
 	margin-top: 2rem;

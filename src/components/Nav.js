@@ -10,6 +10,11 @@ export const Nav = () => {
 		navElemLinkElems.forEach((linkElem) => {
 			linkElem.addEventListener("click", (event) => {
 				const pageIdCode = linkElem.getAttribute("href");
+				const navMenuElem = document.querySelector(`nav ul li a[href="${pageIdCode}"`);
+				navElemLinkElems.forEach((linkElem) => {
+					linkElem.classList.remove('active');
+				});
+				navMenuElem.classList.add('active');
 				let html = '';
 				switch (pageIdCode) {
 					case '/':
@@ -31,7 +36,7 @@ export const Nav = () => {
 <nav>
 	<ul>
 	<li>
-		<a href="/">Home</a>
+		<a class="active" href="/">Home</a>
 	</li>
 	<li>
 		<a href="/contact">Contact</a>
