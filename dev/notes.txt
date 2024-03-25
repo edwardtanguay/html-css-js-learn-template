@@ -1,16 +1,16 @@
 - INFOS
-	- timo's site: https://et778-version2-vanilla-js-spa.vercel.app
-	- my site: https://html-css-js-learn-template.vercel.app
-	- TEST SITE: https://test88962.vercel.app
+	- REPO: https://github.com/edwardtanguay/html-css-js-learn-template
+	- LIVE: https://html-css-js-learn-template.vercel.app
 - x determine if self-JSON reading is possible
 - x change to src structure
-- .. create router
+- x create router
 	- x see: 
 		- https://github.com/edwardtanguay/vite-vanilla-menu/blob/dev/src/Router.ts
 		- https://github.com/edwardtanguay/vite-vanilla-menu/blob/dev/src/App.ts
-	- .. style as nav bar
-	- color for current page
-
+	- x style as nav bar
+	- x color for current page
+- .. all pages on menu
+	- Home, API Data, Local Data, Local Storage, Site
 
 - .. three data sources in appData.js
 	- employees
