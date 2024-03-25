@@ -27,8 +27,9 @@ This template is part of [Edward's tech starters](https://tanguay-eu.vercel.app/
 
 ## limitations
 
-- HTML/CSS/JavaScript websites in general have serious limitations in terms of user features and developer experience
-  - this site is meant to be an academic exercise in order to learn the limits of HTML/CSS/JavaScript sites
+- HTML/CSS/JavaScript websites in general have limitations in terms of user features and developer experience
+	- you can't auto-format HTML inside string literals 
+- this site is meant to be an academic exercise in order to learn the limits of HTML/CSS/JavaScript sites
 - if you want more functionality
   - e.g. if you want to have a backend CRUD API, to use TypeScript, Sass, Tailwind, axios, etc.
 - and especially if you are studying to work as a web developer

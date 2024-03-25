@@ -30,6 +30,7 @@ export const Nav = () => {
 	}, 0);
 	return /*html*/ `
 <nav>
+	<ul>
   <li>
     <a href="/">Home</a>
   </li>
@@ -39,6 +40,7 @@ export const Nav = () => {
   <li>
     <a href="/about">About</a>
   </li>
+</ul>
 </nav>
 `;
 };
