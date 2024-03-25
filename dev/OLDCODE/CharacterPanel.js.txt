@@ -1,4 +1,4 @@
-import * as tools from '../tools.js';
+import * as tools from '../../src/tools.js';
 
 export const CharacterPanel = (characterElem, character) => {
 	characterElem.innerHTML = `
@@ -7,4 +7,4 @@ export const CharacterPanel = (characterElem, character) => {
 			<img src="${character.image}"/>
 		</div>
 	`;
-}
+};

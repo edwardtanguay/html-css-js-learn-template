@@ -1,4 +1,4 @@
-import { Message } from "./Message.js";
+import { Message } from "../../src/components/Message.js";
 
 export const AdminPanel = () => {
 

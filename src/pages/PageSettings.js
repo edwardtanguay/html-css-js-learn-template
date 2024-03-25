@@ -1,4 +1,4 @@
-import { AdminPanel } from "../components/AdminPanel.js";
+import { AdminPanel } from "../../dev/OLDCODE/AdminPanel.js";
 
 export const PageSettings = () => {
 	return /*html*/ `
