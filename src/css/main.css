@@ -82,6 +82,10 @@ i {
 	color: #555;
 }
 
+.content {
+	margin-top: 1.5rem;
+}
+
 .spinner {
 	animation: spin 1s linear infinite;
 }
