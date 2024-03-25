@@ -1,32 +1,12 @@
 body {
 	padding: 2rem;
 	font-family: sans-serif;
+	background-color: #ccc;
 }
 
 h1 {
 	font-size: 2rem;
 	margin-bottom: 1rem;
-}
-
-nav {
-	margin-bottom: 1.5rem;
-	background-color: #aaa;
-	padding: .5rem;
-}
-
-nav ul {
-	display: flex;
-	gap: .8rem;
-	list-style-type: none;
-}
-
-nav ul li a {
-	text-decoration: none;
-	color: #222;
-}
-
-nav ul li a.active {
-	color: rgb(158, 59, 2);
 }
 
 button.reload {
@@ -39,16 +19,47 @@ p {
 	margin-bottom: .7rem;
 }
 
+nav ul li a {
+	text-decoration: none;
+	color: #222;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+nav ul li a.active {
+	color: rgb(158, 59, 2);
+}
+
 /* mobile */
 @media screen and (max-width: 767px) {
-	body {
-		background-color: white;
+	nav {
+		margin-bottom: 1.5rem;
+		background-color: #aaa;
+		padding: 1rem 1rem .5rem 1rem;
+		border-radius: .5rem;
 	}
+
+	nav ul li {
+		margin-bottom: .5rem;	
+	}
+
+
 }
 
 /* computer */
 @media screen and (min-width: 768px) {
-	body {
-		background-color: #ccc;
+	nav {
+		margin-bottom: 1.5rem;
+		background-color: #aaa;
+		padding: .5rem;
 	}
+
+	nav ul {
+		display: flex;
+		gap: .8rem;
+		list-style-type: none;
+	}
+
 }
