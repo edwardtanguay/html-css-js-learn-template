@@ -1,5 +1,6 @@
 import { PageHome } from '../pages/PageHome.js';
 import { PageApiData } from '../pages/PageApiData.js';
+import { PageLocalData } from '../pages/PageLocalData.js';
 import { PageAbout } from '../pages/PageAbout.js';
 
 export const Nav = () => {
@@ -20,8 +21,11 @@ export const Nav = () => {
 					case '/':
 						html = PageHome();
 						break;
-					case '/contact':
+					case '/api-data':
 						html = PageApiData();
+						break;
+					case '/local-data':
+						html = PageLocalData();
 						break;
 					case '/about':
 						html = PageAbout();
@@ -39,7 +43,10 @@ export const Nav = () => {
 		<a class="active" href="/">Home</a>
 	</li>
 	<li>
-		<a href="/apiData">API Data</a>
+		<a href="/api-data">API Data</a>
+	</li>
+	<li>
+		<a href="/local-data">Local Data</a>
 	</li>
 	<li>
 		<a href="/about">About</a>
