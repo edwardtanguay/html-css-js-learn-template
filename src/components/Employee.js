@@ -4,7 +4,7 @@ export const Employee = (employee) => {
 	<div class="employeeHeader">
 		<img src="/src/images/employees/employee_${employee.employeeID}.jpg"/>
 		<div class="employeeInfo">
-			<div className="innerEmployeeInfo">
+			<div class="innerEmployeeInfo">
 				<div class="fullName">${employee.firstName} ${employee.lastName}</div>
 				<div class="title">${employee.title}</div>
 			</div>

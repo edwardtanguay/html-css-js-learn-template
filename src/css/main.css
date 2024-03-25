@@ -180,7 +180,16 @@ div.employee .employeeInfo {
 div.employee .innerEmployeeInfo {
 	display: flex;
 	width: 100%;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.employee .fullName {
+	font-weight: bold;
+}
+
+div.employee .title {
+	font-style: italic;
 }
 
 /* mobile */
