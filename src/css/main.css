@@ -6,7 +6,6 @@ body {
 
 h1 {
 	font-size: 2rem;
-	margin-bottom: 1rem;
 }
 
 button.reload {
@@ -32,6 +31,22 @@ nav ul li a.active {
 	color: rgb(158, 59, 2);
 }
 
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.menuIcon {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.menuIcon:hover {
+	opacity: .5;
+}
+
 /* mobile */
 @media screen and (max-width: 767px) {
 	nav {
@@ -52,6 +67,7 @@ nav ul li a.active {
 		margin-bottom: 1.5rem;
 		background-color: #aaa;
 		padding: .5rem;
+		display: block;
 	}
 
 	nav ul {
@@ -62,8 +78,6 @@ nav ul li a.active {
 
 	.menuIcon {
 		display: none;
-		color: red;
 	}
-
 
 }

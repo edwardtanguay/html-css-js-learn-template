@@ -9,7 +9,7 @@ export const PageHome = () => {
 			<li>simple Router</li>	
 			<li>fetch and display in local JSON files</li>	
 			<li>fetch and display third-party API data</li>	
-			<li></li>
+			<li>if you build your HTML/CSS/JavaScript sites with this format, JavaScript frameworks will make much more sense to you</li>
 		</ul>
 </ul>
 	`;

@@ -56,7 +56,7 @@ export const Nav = () => {
 		<a href="/localstorage">Local Storage</a>
 	</li>
 	<li>
-		<a href="/site">Site</a>
+		<a href="/site">Settings</a>
 	</li>
 	</ul>
 </nav>
