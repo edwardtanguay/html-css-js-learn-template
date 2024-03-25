@@ -88,6 +88,13 @@ img {
 	border-radius: .5rem;
 }
 
+blockquote {
+	margin-top: 1.5rem;
+	text-align: center;
+	font-style: italic;
+	font-size: 1.3rem;
+	font-family: monospace;
+}
 
 /* mobile */
 @media screen and (max-width: 767px) {
