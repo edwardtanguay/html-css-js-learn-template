@@ -270,14 +270,6 @@ div.fullJob .skill a:hover {
 	text-decoration: underline;
 }
 
-.pageApiData .searchArea {
-	margin-bottom: 1rem;
-}
-
-.pageApiData .searchArea input::placeholder {
-	color: #aaa;
-}
-
 
 /* mobile */
 @media screen and (max-width: 767px) {
@@ -315,24 +307,6 @@ div.fullJob .skill a:hover {
 		width: 100%;
 	}
 
-	.pageApiData .searchArea input {
-		font-size: 1.5rem;
-		width: 97%;
-		margin-top: .3rem;
-		margin-bottom: .3rem;
-	}
-
-	.pageApiData .searchArea {
-		font-size: 1.3rem;
-	}
-
-	.computerSearchArea {
-		display: none;
-	}
-
-	.mobileSearchArea {
-		display: block;
-	}
 
 }
 
@@ -366,22 +340,6 @@ div.fullJob .skill a:hover {
 
 	blockquote {
 		width: 20rem;
-	}
-
-	.pageApiData .searchArea input {
-		font-size: 2rem;
-	}
-
-	.pageApiData .searchArea {
-		font-size: 2rem;
-	}
-
-	.computerSearchArea {
-		display: block;
-	}
-
-	.mobileSearchArea {
-		display: none;
 	}
 
 	.fullJob {
