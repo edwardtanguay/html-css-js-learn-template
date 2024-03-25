@@ -16,12 +16,13 @@ export const PageHome = () => {
 
 <h2>Features</h2>
 <ul>
-	<li>create new pages with simple <b>Router</b></li>
-	<li>create and reuse nested <b>components</b></li>
-	<li>display data from <b>local JSON files</b></li>
-	<li>display data from <b>third-party APIs</b></li>
-	<li>allow user to create/edit/delete data with <b>localStorage CRUD</b></li>
-	<li>dynamically change the site (<b>dark mode</b>)</li>
+	<li>simple <b>Router</b></li>
+	<li>nested <b>components</b></li>
+	<li>displays data from <b>local JSON files</b></li>
+	<li>displays data from <b>third-party APIs</b></li>
+	<li>allows user to create/edit/delete data with <b>localStorage CRUD</b></li>
+	<li>has central <b>data-loading component</b> (appData)</li>
+	<li>allows user to <b>change site layout</b> (dark mode)</li>
 	<li><b>responsive</b> design including mobile hambuger menu</li>
 	<li><b>Font Awesome</b> icons</li>
 	<li>can be easily <b>published to Vercel</b></li>
