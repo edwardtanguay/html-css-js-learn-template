@@ -1,8 +1,8 @@
 import { AdminPanel } from "../components/AdminPanel.js";
 
-export const PageAbout = () => {
+export const PageSite = () => {
 	return /*html*/ `
-	<p>This is the about page.</p>
+	<p>This is the site page.</p>
 
 ${AdminPanel()}
 	`;

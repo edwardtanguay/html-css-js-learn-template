@@ -2,7 +2,7 @@ import { PageHome } from '../pages/PageHome.js';
 import { PageApiData } from '../pages/PageApiData.js';
 import { PageLocalData } from '../pages/PageLocalData.js';
 import { PageLocalStorage } from '../pages/PageLocalStorage.js';
-import { PageAbout } from '../pages/PageAbout.js';
+import { PageSite } from '../pages/PageSite.js';
 
 export const Nav = () => {
 	setTimeout(() => {
@@ -31,8 +31,8 @@ export const Nav = () => {
 					case '/localstorage':
 						html = PageLocalStorage();
 						break;
-					case '/about':
-						html = PageAbout();
+					case '/site':
+						html = PageSite();
 						break;
 				}
 				pageOutletElem.innerHTML = html;
@@ -56,7 +56,7 @@ export const Nav = () => {
 		<a href="/localstorage">Local Storage</a>
 	</li>
 	<li>
-		<a href="/about">About</a>
+		<a href="/site">Site</a>
 	</li>
 	</ul>
 </nav>
