@@ -7,7 +7,7 @@ export const PageHome = () => {
 <ul>
 	<li>to give you a useful HTML/CSS/JS <b>starter site</b> with many <b>features</b></li>
 	<li>to make you aware of the <b>limitations</b> of HTML/CSS/JavaScript sites (sites you can start in the browser or with VSCode's Live Server extension)</li>
-	<li>to make the reasons clear why as a web developer you should instead learn <b>JavaScript frameworks</b>, e.g. React, Vue, Angular (sites which require Node and which you start with <code>npm run dev</code>)</li>
+	<li>to make clear why as a web developer you should instead learn <b>JavaScript frameworks</b>, e.g. React, Vue, Angular (sites which require Node and which you start with <code>npm run dev</code>)</li>
 </ul>
 
 <blockquote>Building sites with this template is a good way to transition your skills from 1990s HTML pages to modern JavaScript frameworks.
