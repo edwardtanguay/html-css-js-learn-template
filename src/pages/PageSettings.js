@@ -1,6 +1,6 @@
 import { AdminPanel } from "../components/AdminPanel.js";
 
-export const PageSite = () => {
+export const PageSettings = () => {
 	return /*html*/ `
 	<p>This is the site page.</p>
 

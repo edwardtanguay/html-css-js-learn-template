@@ -2,8 +2,8 @@ import { PageHome } from '../pages/PageHome.js';
 import { PageApiData } from '../pages/PageApiData.js';
 import { PageLocalData } from '../pages/PageLocalData.js';
 import { PageLocalStorage } from '../pages/PageLocalStorage.js';
-import { PageSite } from '../pages/PageSite.js';
 import * as config from '../config.js';
+import { PageSettings } from '../pages/PageSettings.js';
 
 export const Nav = () => {
 	setTimeout(() => {
@@ -30,17 +30,17 @@ export const Nav = () => {
 					case '/':
 						html = PageHome();
 						break;
-					case '/apidata':
-						html = PageApiData();
-						break;
 					case '/localdata':
 						html = PageLocalData();
+						break;
+					case '/apidata':
+						html = PageApiData();
 						break;
 					case '/localstorage':
 						html = PageLocalStorage();
 						break;
-					case '/site':
-						html = PageSite();
+					case '/settings':
+						html = PageSettings();
 						break;
 				}
 				pageOutletElem.innerHTML = html;
@@ -64,7 +64,7 @@ export const Nav = () => {
 			<a href="/localstorage">localStorage CRUD</a>
 		</li>
 		<li>
-			<a href="/site">Settings</a>
+			<a href="/settings">Settings</a>
 		</li>
 	</ul>
 </nav>

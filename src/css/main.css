@@ -274,6 +274,9 @@ p.intro {
 	line-height: 1.5rem;
 }
 
+div.constructionSignArea {
+	margin-top: 2rem;
+}
 
 /* mobile */
 @media screen and (max-width: 767px) {
@@ -311,6 +314,14 @@ p.intro {
 		width: 100%;
 	}
 
+div.constructionSignArea img {
+	width: auto;
+}
+
+div.constructionSignArea {
+	display: flex;
+	justify-content: center;
+}
 
 }
 
