@@ -89,22 +89,27 @@ img {
 }
 
 blockquote {
+	background-color: #bbb;
+	padding: 1rem;
 	margin-top: 1.5rem;
 	text-align: center;
 	font-style: italic;
 	font-size: 1.3rem;
 	font-family: monospace;
 	color: darkred;
+	border: 1px solid #aaa;
+	border-radius: .5rem;
+	width: calc(100% - 2rem);
 }
 
 .githubLinkArea {
 	margin-top: 1rem;
 	font-size: 1rem;
-	color: darkred;
+	color: #000;
 }
 
 .githubLinkArea a {
-	color: darkred;
+	color: #000;
 }
 
 /* mobile */
@@ -138,6 +143,7 @@ blockquote {
 	img {
 		width: 100%;
 	}
+
 }
 
 /* computer */
@@ -170,9 +176,6 @@ blockquote {
 
 	blockquote {
 		width: 20rem;
-		border: 1px solid #aaa;
-		padding: 1rem;
-		border-radius: .5rem;
-		background-color: #bbb;
 	}
+
 }
