@@ -21,7 +21,7 @@ export const Header = () => {
 
 		menuItemElem.addEventListener('click', () => {
 			const navElemStatus = navMobileElem.style.display;
-			navMobileElem.style.display = navElemStatus === 'none' ? 'block' : 'none';
+			navMobileElem.style.display = navElemStatus === 'block' ? 'none' : 'block';
 		});
 	}, 0);
 

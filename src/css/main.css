@@ -53,7 +53,7 @@ header {
 		background-color: #aaa;
 		padding: 1rem 1rem .5rem 1rem;
 		border-radius: .5rem;
-		display: block;
+		display: none;
 	}
 
 	nav.mobile ul li {

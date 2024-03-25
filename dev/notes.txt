@@ -12,8 +12,8 @@
 - x all pages on menu
 	- Home, API Data, Local Data, Local Storage, Site
 
-- .. responsive
-	- .. hamburger icon
+- x responsive
+	- x hamburger icon
 
 - .. home page
 	- with image
