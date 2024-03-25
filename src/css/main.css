@@ -270,6 +270,10 @@ div.fullJob .skill a:hover {
 	text-decoration: underline;
 }
 
+p.intro {
+	line-height: 1.5rem;
+}
+
 
 /* mobile */
 @media screen and (max-width: 767px) {
@@ -343,6 +347,6 @@ div.fullJob .skill a:hover {
 	}
 
 	.fullJob {
-		width: 50rem;
+		width: 40rem;
 	}
 }

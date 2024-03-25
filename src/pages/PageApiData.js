@@ -18,7 +18,7 @@ export const PageApiData = () => {
 
 	return /*html*/ `
 	<section class="page pageApiData">
-		<p>This page loads data asynchronously from a an external API via fetch. Two separate API requests are made (<b>jobs</b> and <b>skills</b>) which are combined to create a new data source for this page.</p>
+		<p class="intro">This page loads data asynchronously from a an external API via fetch. Two separate API requests are made (<b>jobs</b> and <b>skills</b>) which are combined to create a new data source for this page.</p>
 		<div class="content">
 			${Loading()}
 		</div>
