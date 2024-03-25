@@ -26,9 +26,10 @@ export const PageHome = () => {
 
 <h2>Limitations</h2>
 <ul>
-	<li>you <b>cannot install npm packages</b> as you can in JavaScript Frameworks, which means that technologies such as TypeScript, Sass, Tailwind, testing frameworks, etc. are cumbersome to install and maintain</li>
+	<li>you <b>cannot install npm packages</b> as you can in JavaScript Frameworks</li>
+	<li>not being able to install npm packages means that you <b>cannot use TypeScript, Sass, Tailwind, testing frameworks, etc.</b> or if you do, they are cumbersome to set up (TypeScript, Sass, testing frameworks) or are officially not recommended for HTML/CSS/JavaScript sites (Tailwind)</li>
 	<li>Router has <b>no page bookmarking</b> and <b>no page refreshing</b> support, i.e. the URL does not reflect which page the user is on and so cannot bring the user back to the same page when clicking a bookmark or refreshing the page, and this is not possible since there is no Node server present as there is in JavaScript frameworks</li>
-	<li>no <b>state variable support</b> which means adding interactivity to the site becomes exponentially complex</li>
+	<li>no <b>state variable support</b> which means adding interactivity to the site (with addEventListener) becomes exponentially complex</li>
 	<li>VSCode <b>cannot auto-format HTML</b> in string literals:
 		<img src="src/images/noautoformat.png"/>
 	</li>
