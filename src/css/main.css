@@ -272,12 +272,7 @@ div.fullJob .skill a:hover {
 }
 
 .pageApiData .searchArea {
-	font-size: 2rem;
 	margin-bottom: 2rem;
-}
-
-.pageApiData .searchArea input {
-	font-size: 2rem;
 }
 
 .pageApiData .searchArea input::placeholder {
@@ -289,6 +284,10 @@ div.fullJob .skill a:hover {
 @media screen and (max-width: 767px) {
 	header {
 		margin-bottom: 1.5rem;
+	}
+
+	header h1 {
+		font-size: 1.7rem;
 	}
 
 	nav {
@@ -315,6 +314,17 @@ div.fullJob .skill a:hover {
 
 	img {
 		width: 100%;
+	}
+
+	.pageApiData .searchArea input {
+		font-size: 1.5rem;
+		width: 100%;
+		margin-top: .3rem;
+		margin-bottom: .3rem;
+	}
+
+	.pageApiData .searchArea {
+		font-size: 1.7rem;
 	}
 
 
@@ -352,4 +362,11 @@ div.fullJob .skill a:hover {
 		width: 20rem;
 	}
 
+	.pageApiData .searchArea input {
+		font-size: 2rem;
+	}
+
+	.pageApiData .searchArea {
+		font-size: 2rem;
+	}
 }

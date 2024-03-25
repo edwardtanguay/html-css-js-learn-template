@@ -9,6 +9,7 @@
 		- https://edwardtanguay.vercel.app/share/skills.json
 	- x getFullJobs()
 	- x build and style FullJob
+	- .. fix responsive
 	- .. search jobs
 
 - localstorage page
