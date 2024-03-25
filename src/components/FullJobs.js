@@ -1,11 +1,17 @@
 import { FullJob } from "./FullJob.js";
+import * as config from '../config.js';
 
 export const FullJobs = (fullJobs) => {
 
 	setTimeout(() => {
-		const inputElem = document.querySelector('.searchText');
+		const mobileInputElem = document.querySelector('.mobileSearchArea .searchText');
+		const computerInputElem = document.querySelector('.computerSearchArea .searchText');
 
-		inputElem.focus();
+		if (config.getResponsiveStatus() === 'mobile') {
+			mobileInputElem.focus();
+		} else {
+			computerInputElem.focus();
+		}
 	}, 0);
 
 	return /*html*/ `
