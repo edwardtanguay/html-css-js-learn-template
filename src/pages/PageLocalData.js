@@ -1,18 +1,19 @@
 import * as appData from '../appData.js';
+import { Loading } from '../components/Loading.js';
 
 export const PageLocalData = () => {
 
 	setTimeout(async () => {
-		const testElem = document.querySelector('.pageLocalData .test');
-		const notes = await appData.getNotes();
+		const pageElem = document.querySelector('.pageLocalData');
+		const employees = await appData.getEmployees();
 
-		testElem.innerHTML = `There are ${notes.length} notes.`;
+		pageElem.innerHTML = `There are ${employees.length} employees.`;
 
 	}, 0);
 
 	return /*html*/ `
 	<section class="page pageLocalData">
-		<p class="test"><i>Loading...</i></p>
+		${Loading()}
 	</section>
 	`;
 };

@@ -1,13 +1,13 @@
 import { generalErrorMessage } from "./config.js";
 
-export const getNotes = () => {
+export const getEmployees = () => {
 	return new Promise((resolve, reject) => {
 		setTimeout(async () => {
 			try {
-				const response = await fetch('/src/data/notes.json');
-				const notes = await response.json();
+				const response = await fetch('/src/data/employees.json');
+				const employees = await response.json();
 				if (response.ok) {
-					resolve(notes);
+					resolve(employees);
 				} else {
 					console.log('ERROR', e);
 					reject({ message: generalErrorMessage() });
