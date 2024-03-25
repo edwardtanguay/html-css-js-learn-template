@@ -19,7 +19,7 @@ export const PageLocalData = () => {
 
 	return /*html*/ `
 	<section class="page pageLocalData">
-		<p>This page loads data asynchronously from a local JSON file via fetch.</p>
+		<p>This page loads data asynchronously from a local JSON file via fetch. The images are also stored locally in the website.</p>
 		<div class="content">
 			${Loading()}
 		</div>
