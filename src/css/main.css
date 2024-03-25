@@ -218,6 +218,40 @@ div.errorMessage h3 {
 	font-weight: bold;
 }
 
+/* JOBS */
+
+div.fullJobs {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+div.fullJob {
+	background-color: #ddd;
+	padding: 1rem;
+	width: 25rem;
+}
+
+div.fullJob .title {
+	font-weight: bold;
+	margin-bottom: .2rem;
+}
+
+div.fullJob .title a {
+	text-decoration: none;
+	color: #000;
+}
+
+div.fullJob .title a:hover {
+	text-decoration: underline;
+}
+
+div.fullJob .company {
+	color: brown;
+	margin-bottom: .2rem;
+}
+
+
 /* mobile */
 @media screen and (max-width: 767px) {
 	header {

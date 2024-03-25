@@ -114,5 +114,6 @@ const convertJobsAndSkillsToFullJobs = (jobs, skills) => {
 			fullJobs.push(fullJob);
 		}
 	}
+	fullJobs.sort((a, b) => a.publicationDate < b.publicationDate ? 1 : -1);
 	return fullJobs;
 };
