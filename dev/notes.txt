@@ -1,25 +1,9 @@
 - INFOS
 	- REPO: https://github.com/edwardtanguay/html-css-js-learn-template
 	- LIVE: https://html-css-js-learn-template.vercel.app
-- x determine if self-JSON reading is possible
-- x change to src structure
-- x create router
-	- x see: 
-		- https://github.com/edwardtanguay/vite-vanilla-menu/blob/dev/src/Router.ts
-		- https://github.com/edwardtanguay/vite-vanilla-menu/blob/dev/src/App.ts
-	- x style as nav bar
-	- x color for current page
-- x all pages on menu
-	- Home, API Data, Local Data, Local Storage, Site
 
-- x responsive
-	- x hamburger icon
+- .. github icon and link
 
-- x simplify responsive
-
-- .. home page
-	- with image
-	
 - api data page
 	- jobs/skills
 		- (external JSON files)

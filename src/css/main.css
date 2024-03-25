@@ -94,6 +94,17 @@ blockquote {
 	font-style: italic;
 	font-size: 1.3rem;
 	font-family: monospace;
+	color: rgb(99, 49, 8);
+}
+
+.githubLinkArea {
+	margin-top: 1rem;
+	font-size: 1rem;
+	color: darkred;
+}
+
+.githubLinkArea a {
+	color: darkred;
 }
 
 /* mobile */
