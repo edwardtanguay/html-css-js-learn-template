@@ -327,6 +327,12 @@ div.fullJob .skill a:hover {
 		font-size: 1.7rem;
 	}
 
+	.computerSearchArea {
+		display:none;
+	}
+	.mobileSearchArea {
+		display:block;
+	}
 
 }
 
@@ -368,5 +374,12 @@ div.fullJob .skill a:hover {
 
 	.pageApiData .searchArea {
 		font-size: 2rem;
+	}
+
+	.computerSearchArea {
+		display:block;
+	}
+	.mobileSearchArea {
+		display:none;
 	}
 }
