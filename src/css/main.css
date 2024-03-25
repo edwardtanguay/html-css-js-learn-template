@@ -53,7 +53,7 @@ header {
 		margin-bottom: 1.5rem;
 	}
 
-	nav.mobile {
+	nav {
 		margin-bottom: 1.5rem;
 		background-color: #aaa;
 		padding: 1rem 1rem .5rem 1rem;
@@ -61,12 +61,8 @@ header {
 		display: none;
 	}
 
-	nav.mobile ul li {
+	nav ul li {
 		margin-bottom: .5rem;
-	}
-
-	nav.computer {
-		display: none;
 	}
 
 	p {
@@ -77,21 +73,17 @@ header {
 
 /* computer */
 @media screen and (min-width: 768px) {
-	nav.computer {
+	nav {
 		background-color: #aaa;
 		padding: .5rem;
 		display: block;
 		margin-bottom: 1rem;
 	}
 
-	nav.computer ul {
+	nav ul {
 		display: flex;
 		gap: .8rem;
 		list-style-type: none;
-	}
-
-	nav.mobile {
-		display: none;
 	}
 
 	.menuIcon {
