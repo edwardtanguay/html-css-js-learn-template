@@ -1,5 +1,5 @@
 import { PageHome } from '../pages/PageHome.js';
-import { PageContact } from '../pages/PageContact.js';
+import { PageApiData } from '../pages/PageApiData.js';
 import { PageAbout } from '../pages/PageAbout.js';
 
 export const Nav = () => {
@@ -21,7 +21,7 @@ export const Nav = () => {
 						html = PageHome();
 						break;
 					case '/contact':
-						html = PageContact();
+						html = PageApiData();
 						break;
 					case '/about':
 						html = PageAbout();
@@ -39,7 +39,7 @@ export const Nav = () => {
 		<a class="active" href="/">Home</a>
 	</li>
 	<li>
-		<a href="/contact">Contact</a>
+		<a href="/apiData">API Data</a>
 	</li>
 	<li>
 		<a href="/about">About</a>
