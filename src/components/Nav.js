@@ -61,7 +61,7 @@ export const Nav = () => {
 			<a href="/apidata">External API Data</a>
 		</li>
 		<li>
-			<a href="/localstorage">Local Storage</a>
+			<a href="/localstorage">localStorage CRUD</a>
 		</li>
 		<li>
 			<a href="/site">Settings</a>

@@ -15,7 +15,7 @@
 - x responsive
 	- x hamburger icon
 
-- .. simplify responsive
+- x simplify responsive
 
 - .. home page
 	- with image
@@ -34,3 +34,5 @@
 	- flashcards
 - site page
 	- make dark mode switch
+
+- correct all pageIdCodes
