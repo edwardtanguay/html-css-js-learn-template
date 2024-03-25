@@ -21,11 +21,15 @@ export const PageHome = () => {
 	<li>dynamically change the site (<b>dark mode</b>)</li>
 	<li><b>responsive</b> design including mobile hambuger menu</li>
 	<li><b>Font Awesome</b> icons</li>
+	<li>can be easily <b>published to Vercel</b></li>
 </ul>
 
 <h2>Limitations</h2>
 <ul>
-	<li>Router does not support <b>bookmarking</b> and user will not stay on the same page if they <p>refresh</p> the page</li>
+	<li>you <b>cannot install npm packages</b> as you can in JavaScript Frameworks, which means that technologies such as TypeScript, Sass, Tailwind, testing frameworks, etc. are cumbersome to install and maintain</li>
+	<li>Router has <b>no page bookmarking</b> and <b>no page refreshing</b> support, i.e. the URL does not reflect which page the user is on and so cannot bring the user back to the same page when clicking a bookmark or refreshing the page, and this is not possible since there is no Node server present as there is in JavaScript frameworks</li>
+	<li>no <b>state variable support</b> which means adding interactivity to the site becomes exponentially complex</li>
+	<li>VSCode <b>cannot auto-format HTML</b> in string literals</li>
 </ul>
 
 </div>
