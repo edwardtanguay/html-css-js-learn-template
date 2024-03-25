@@ -28,7 +28,10 @@ This template is part of [Edward's tech starters](https://tanguay-eu.vercel.app/
 ## limitations
 
 - HTML/CSS/JavaScript websites in general have limitations in terms of user features and developer experience
-	- you can't auto-format HTML inside string literals 
+	- you can't auto-format HTML inside string literals
+
+![grafik](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/8171798a-be2a-4da4-9dfb-26c2101ab8a8)
+
 - this site is meant to be an academic exercise in order to learn the limits of HTML/CSS/JavaScript sites
 - if you want more functionality
   - e.g. if you want to have a backend CRUD API, to use TypeScript, Sass, Tailwind, axios, etc.
