@@ -20,3 +20,24 @@ export const getEmployees = () => {
 		}, 0);
 	});
 };
+
+export const getJobs = () => {
+	return new Promise((resolve, reject) => {
+		setTimeout(async () => {
+			try {
+				const response = await fetch('https://edwardtanguay.vercel.app/share/jobs.json');
+				const jobs = await response.json();
+				if (response.ok) {
+					resolve(jobs);
+				} else {
+					console.log('ERROR', e);
+					reject({ message: generalErrorMessage() });
+				}
+			}
+			catch (e) {
+				console.log('ERROR', e);
+				reject({ message: generalErrorMessage() });
+			}
+		}, 0);
+	});
+};

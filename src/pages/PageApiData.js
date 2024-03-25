@@ -1,5 +1,26 @@
+import * as appData from '../appData.js';
+import { Loading } from '../components/Loading.js';
+
 export const PageApiData = () => {
+	setTimeout(async () => {
+		const contentElem = document.querySelector('.pageApiData .content');
+
+		try {
+			const jobs = await appData.getJobs();
+			contentElem.innerHTML = `There are ${jobs.length} jobs.`
+		}
+		catch (e) {
+			contentElem.innerHTML = '<div class="errorMessage">' + e.message + '</div>';
+		}
+
+	}, 0);
+
 	return /*html*/ `
-	<p>This is the API data page.</p>
+	<section class="page pageApiData">
+		<p>This page loads data asynchronously from a an external API via fetch. Two separate API requests are made (to <b>jobs</b> and <b>skills</b>) which are combined to create a data source available to this page.</p>
+		<div class="content">
+			${Loading()}
+		</div>
+	</section>
 	`;
 }
