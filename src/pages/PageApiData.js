@@ -6,9 +6,8 @@ export const PageApiData = () => {
 		const contentElem = document.querySelector('.pageApiData .content');
 
 		try {
-			const jobs = await appData.getJobs();
-			const skills = await appData.getSkills();
-			contentElem.innerHTML = `There are ${jobs.length} jobs and ${skills.length} skills.`
+			const fullJobs = await appData.getFullJobs();
+			contentElem.innerHTML = `There are ${fullJobs.length} full jobs.`
 		}
 		catch (e) {
 			contentElem.innerHTML = '<div class="errorMessage">' + e.message + '</div>';

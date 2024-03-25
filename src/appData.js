@@ -1,3 +1,4 @@
+import * as appData from './appData.js';
 import { generalErrorMessage } from "./config.js";
 
 export const getEmployees = () => {
@@ -54,6 +55,22 @@ export const getSkills = () => {
 					console.log('ERROR', e);
 					reject({ message: generalErrorMessage() });
 				}
+			}
+			catch (e) {
+				console.log('ERROR', e);
+				reject({ message: generalErrorMessage() });
+			}
+		}, 0);
+	});
+};
+
+export const getFullJobs = () => {
+	return new Promise((resolve, reject) => {
+		setTimeout(async () => {
+			try {
+				const jobs = await appData.getJobs();
+				// const skills = await appData.getSkills();
+				resolve(jobs);
 			}
 			catch (e) {
 				console.log('ERROR', e);

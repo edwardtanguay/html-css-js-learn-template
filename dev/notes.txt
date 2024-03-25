@@ -3,10 +3,11 @@
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
 - .. api data page
-	- .. load both: jobs/skills
+	- x load both: jobs/skills
 		- (external JSON files)
 		- https://edwardtanguay.vercel.app/share/jobs.json
 		- https://edwardtanguay.vercel.app/share/skills.json
+	- .. getFullJobs()
 
 - localstorage page
 	- flashcards
@@ -17,3 +18,5 @@
 
 - correct all pageIdCodes
 - copy home page text to 
+
+- use tools.js somehow
