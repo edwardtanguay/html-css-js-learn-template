@@ -75,6 +75,28 @@ i {
 	font-style: italic;
 }
 
+.loading {
+	display: flex;
+	gap: .4rem;
+	font-size: 1.4rem;
+	color: #777;
+	padding: .5rem;
+}
+
+.spinner {
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .page ul {
 	list-style: disc;
 	margin-left: 1rem;

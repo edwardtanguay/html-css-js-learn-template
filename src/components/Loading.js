@@ -1,5 +1,8 @@
 export const Loading = () => {
 	return /*html*/ `
-		<i>Loading...</i>
+<div class="loading">
+	<i class="fa fa-cog spinner" aria-hidden="true"></i>
+	<i>Loading...</i>
+</div>
 	`;
 };
