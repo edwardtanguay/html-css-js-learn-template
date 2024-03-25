@@ -69,8 +69,9 @@ export const getFullJobs = () => {
 		setTimeout(async () => {
 			try {
 				const jobs = await appData.getJobs();
-				// const skills = await appData.getSkills();
-				resolve(jobs);
+				const skills = await appData.getSkills();
+				const fullJobs = convertJobsAndSkillsToFullJobs(jobs, skills);
+				resolve(fullJobs);
 			}
 			catch (e) {
 				console.log('ERROR', e);
@@ -78,4 +79,40 @@ export const getFullJobs = () => {
 			}
 		}, 0);
 	});
+};
+
+const convertSkillListToSkills = (skillList, skills, job) => {
+	const skillIdCodes = skillList.split(',').map(m => m.trim());
+	const jobSkills = [];
+	for (const skillIdCode of skillIdCodes) {
+		const skill = skills.find(m => m.idCode === skillIdCode);
+		if (skill) {
+			const jobSkill = {
+				idCode: skillIdCode,
+				name: skill.name
+			};
+			jobSkills.push(jobSkill);
+		} else {
+			console.log(`BAD SKILL: ${skillIdCode} (${job.company})`);
+		}
+	}
+	return jobSkills;
+};
+
+const convertJobsAndSkillsToFullJobs = (jobs, skills) => {
+	const fullJobs = [];
+	for (const job of jobs) {
+		const jobSkills = convertSkillListToSkills(job.skillList, skills, job);
+		if (jobSkills) {
+			const fullJob = {
+				title: job.title,
+				company: job.company,
+				url: job.url,
+				publicationDate: job.publicationDate,
+				skills: jobSkills
+			};
+			fullJobs.push(fullJob);
+		}
+	}
+	return fullJobs;
 };
