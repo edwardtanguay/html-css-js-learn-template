@@ -5,8 +5,9 @@
 - .. localstorage page
 	- x make TodoManager class
 	- x make it update live
-	- .. get suuid function
-	- .. create initial todos
+	- x get suuid function
+	- x create initial todos
+	- .. display todos
 
 - settings page
 	- dark mode

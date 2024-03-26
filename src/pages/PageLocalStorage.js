@@ -8,7 +8,6 @@ export const PageLocalStorage = () => {
 
 		try {
 			const todoManager = new TodoManager(contentElem);
-			// contentElem.innerHTML = ConstructionSign();
 		}
 		catch (e) {
 			contentElem.innerHTML = '<div class="errorMessage">' + e.message + '</div>';
