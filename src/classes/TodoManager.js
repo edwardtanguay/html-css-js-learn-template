@@ -53,7 +53,8 @@ export class TodoManager {
 
 	renderAddForm() {
 		setTimeout(() => {
-
+			const titleElem = document.querySelector('.todoApp .title'); 
+			titleElem.focus();
 		});
 		return /*html*/ `
 			<form class="addForm">
@@ -69,12 +70,13 @@ export class TodoManager {
 							<div>5</div>
 						</div>
 						<div class="inProgressArea">
-							<input type="checkbox" class="inProgressCheckbox" id="inProgressCheckbox"> <label for="inProgressCheckbox">In Progress</label>
+							<input type="checkbox" class="inProgressCheckbox" id="inProgressCheckbox"> <label for="inProgressCheckbox" class="inProgressText">In Progress</label>
 						</div>
 					</div>
 
 					<div class="buttonArea">
-						<button>Add</button>
+						<button class="btnCancel">Cancel</button>
+						<button class="btnAdd">Add</button>
 					</div>
 
 				</fieldset>

@@ -11,7 +11,11 @@
 	- x display with delete button
 		- x fontawesome trashcan
 	- x add button
-	- .. add form
+	- x add form
+	- x focus
+	- .. cancel
+	- .. add adds
+	
 
 - settings page
 	- dark mode
