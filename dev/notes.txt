@@ -7,7 +7,8 @@
 	- x make it update live
 	- x get suuid function
 	- x create initial todos
-	- .. display todos
+	- x display todos
+	- .. display with delete button
 
 - settings page
 	- dark mode

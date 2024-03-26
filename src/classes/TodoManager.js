@@ -14,16 +14,18 @@ export class TodoManager {
 	render() {
 		this.mainElem.innerHTML = /*html*/ `
 		<div class="todoApp">
-			<h3>Todo App</h3>
-			<div class="main">There are ${this.todos.length} todos.</div>
+			<div class="header">
+				<h3>Todo App</h3>
+				<div class="numberOfTodos">There are ${this.todos.length} todos.</div>
+			</div>
 			<div class="todos">
 				${this.todos.map(todo => {
-					return /*html*/ `
+			return /*html*/ `
 					<div class="todo">
 						<div class="name">${todo.name}</div>
 					</div>
-					`
-				}).join('')}
+					`;
+		}).join('')}
 			</div>
 			<div>
 			</div>
