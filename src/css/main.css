@@ -318,14 +318,14 @@ div.constructionSignArea {
 		width: 100%;
 	}
 
-div.constructionSignArea img {
-	width: auto;
-}
+	div.constructionSignArea img {
+		width: auto;
+	}
 
-div.constructionSignArea {
-	display: flex;
-	justify-content: center;
-}
+	div.constructionSignArea {
+		display: flex;
+		justify-content: center;
+	}
 
 }
 
@@ -363,6 +363,10 @@ div.constructionSignArea {
 
 	.fullJob {
 		width: 40rem;
+	}
+
+	.todoApp {
+		width: 30rem;
 	}
 }
 

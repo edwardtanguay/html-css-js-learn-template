@@ -10,7 +10,8 @@
 	- x display todos
 	- x display with delete button
 		- x fontawesome trashcan
-	- .. add button
+	- x add button
+	- .. add form
 
 - settings page
 	- dark mode
