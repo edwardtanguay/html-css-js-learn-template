@@ -13,7 +13,7 @@
 	- x add button
 	- x add form
 	- x focus
-	- .. cancel button
+	- x cancel button
 	- .. add adds
 	
 

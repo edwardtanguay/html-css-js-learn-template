@@ -1,4 +1,5 @@
 import * as appData from '../appData.js';
+import * as tools from '../tools.js';
 
 export class TodoManager {
 	constructor(mainElem) {
@@ -55,9 +56,21 @@ export class TodoManager {
 		setTimeout(() => {
 			const titleElem = document.querySelector('.todoApp .title');
 			const btnCancelElem = document.querySelector('.todoApp .btnCancel');
+			const btnAddElem = document.querySelector('.todoApp .btnAdd');
 			titleElem.focus();
 
 			btnCancelElem.addEventListener('click', () => {
+				this.currentlyAddingTodo = false;
+				this.render();
+			});
+
+			btnAddElem.addEventListener('click', () => {
+				this.todos.push({
+					suuid: tools.generateSuuid(),
+					title: 'nnn',
+					stars: 3.5,
+					inProgress: false
+				});
 				this.currentlyAddingTodo = false;
 				this.render();
 			});
