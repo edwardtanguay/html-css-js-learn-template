@@ -327,6 +327,25 @@ div.constructionSignArea {
 		justify-content: center;
 	}
 
+	.todoApp .addForm fieldset .title {
+		width: 98%;
+		font-size: 1.4rem;
+		background-color: #eee;
+	}
+
+	.todoApp .addForm fieldset .buttonArea button.btnCancel {
+		font-size: 1rem;
+		width: 30%;
+		padding: .5rem;
+	}
+
+	.todoApp .addForm fieldset .buttonArea button.btnAdd {
+		font-size: 1rem;
+		width: 68%;
+		padding: .5rem;
+	}
+
+
 }
 
 /* computer */
@@ -386,6 +405,26 @@ div.constructionSignArea {
 		width: 83%;
 		padding: .5rem;
 	}
+
+	.todoApp .addForm fieldset .title {
+		width: 98%;
+		font-size: 1.4rem;
+		background-color: #eee;
+	}
+
+	.todoApp .addForm fieldset .extraFields {
+		margin-top: 1rem;
+		display: flex;
+		place-items: center;
+		justify-content: space-between;
+	}
+
+	.todoApp .addForm fieldset .starsArea {
+		display: flex;
+		place-items: center;
+	}
+
+
 }
 
 /* TODO MANAGER */
@@ -449,26 +488,18 @@ div.constructionSignArea {
 	font-variant: small-caps;
 }
 
-.todoApp .addForm fieldset .title {
-	width: 98%;
-	font-size: 1.4rem;
-	background-color: #eee;
-}
-
-.todoApp .addForm fieldset .starsArea {
-	display: flex;
-	place-items: center;
-}
-
-.todoApp .addForm fieldset .extraFields {
-	margin-top: 1rem;
-	display: flex;
-	place-items: center;
-	justify-content: space-between;
-}
-
 
 .todoApp .addForm fieldset .inProgressText {
 	user-select: none;
 	cursor: pointer;
+}
+
+.todoApp .addForm fieldset .starScore {
+	color: brown;
+	font-family: monospace;
+	margin-right: .4rem;
+	background-color: #eee;
+	padding: .2rem;
+	width: 2rem;
+	text-align: center;
 }

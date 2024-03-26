@@ -14,6 +14,9 @@
 	- x add form
 	- x focus
 	- x cancel button
+	- .. constant refresh
+	- .. responsive
+	- .. slider
 	- .. add adds
 	
 

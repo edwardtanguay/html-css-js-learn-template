@@ -1,5 +1,6 @@
 import * as appData from '../appData.js';
 import * as tools from '../tools.js';
+import * as config from '../config.js';
 
 export class TodoManager {
 	constructor(mainElem) {
@@ -54,9 +55,13 @@ export class TodoManager {
 
 	renderAddForm() {
 		setTimeout(() => {
+			const starsDefault = 3;
 			const titleElem = document.querySelector('.todoApp .title');
 			const btnCancelElem = document.querySelector('.todoApp .btnCancel');
 			const btnAddElem = document.querySelector('.todoApp .btnAdd');
+			const sliderElem = document.querySelector('.todoApp .slider');
+			const starScoreElem = document.querySelector('.todoApp .starScore');
+			starScoreElem.innerText = String(starsDefault.toFixed(1));
 			titleElem.focus();
 
 			btnCancelElem.addEventListener('click', () => {
@@ -64,11 +69,15 @@ export class TodoManager {
 				this.render();
 			});
 
+			sliderElem.addEventListener('change', () => {
+				starScoreElem.innerText = Number(sliderElem.value).toFixed(1);
+			});
+
 			btnAddElem.addEventListener('click', () => {
 				this.todos.push({
 					suuid: tools.generateSuuid(),
 					title: 'nnn',
-					stars: 3.5,
+					stars: starsDefault,
 					inProgress: false
 				});
 				this.currentlyAddingTodo = false;
@@ -84,8 +93,9 @@ export class TodoManager {
 
 					<div class="extraFields">
 						<div class="starsArea">
+							<div class="starScore"></div>
 							<div>Stars: 1</div>
-							<input class="slider" type="range" min="1" max="100" value="50">
+							<input class="slider" type="range" min="1" max="5" value="3" step="0.1">
 							<div>5</div>
 						</div>
 						<div class="inProgressArea">
