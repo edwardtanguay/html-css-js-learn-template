@@ -404,7 +404,12 @@ div.constructionSignArea {
 	justify-content: space-between;
 }
 
-
 .todoApp .todos .todo .deleteIcon {
 	cursor: pointer;
+}
+
+.todoApp .addArea {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
 }

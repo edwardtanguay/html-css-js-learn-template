@@ -8,8 +8,9 @@
 	- x get suuid function
 	- x create initial todos
 	- x display todos
-	- .. display with delete button
-		- .. fontawesome trashcan
+	- x display with delete button
+		- x fontawesome trashcan
+	- .. add button
 
 - settings page
 	- dark mode

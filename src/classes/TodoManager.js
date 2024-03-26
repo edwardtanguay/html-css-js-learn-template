@@ -18,6 +18,10 @@ export class TodoManager {
 				<h3>Todo App</h3>
 				<div class="numberOfTodos">There are ${this.todos.length} todos.</div>
 			</div>
+
+			<div class="addArea">
+				<button><i class="fa fa-plus" aria-hidden="true"></i> Add new todo</button>
+			</div>
 			<div class="todos">
 				${this.todos.map(todo => {
 			return /*html*/ `
