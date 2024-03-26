@@ -3,18 +3,18 @@
 		"suuid": "RtbYbw",
 		"name": "Learn Astro",
 		"rank": 4.1,
-		"inProgress": true 
+		"inProgress": true
 	},
 	{
 		"suuid": "ZzORWF",
 		"name": "Go to store",
 		"rank": 2.5,
-		"inProgress": false 
+		"inProgress": false
 	},
 	{
 		"suuid": "qSl64B",
 		"name": "Run a 5K",
 		"rank": 3.1,
-		"inProgress": false 
+		"inProgress": false
 	}
 ]

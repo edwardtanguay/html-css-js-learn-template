@@ -38,11 +38,8 @@ export class TodoManager {
 		const className = `deleteIcon-${todo.suuid}`;
 		setTimeout(() => {
 			const deleteIconElem = document.querySelector(`.todoApp .${className}`);
-
-			console.log('className', className);
-			console.log('deleteIconElem',deleteIconElem);
-
 			deleteIconElem.addEventListener('click', () => {
+				this.todos = this.todos.filter(m => m.suuid !== todo.suuid);
 				this.render();
 			});
 		});
