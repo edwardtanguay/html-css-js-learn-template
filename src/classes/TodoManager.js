@@ -53,8 +53,14 @@ export class TodoManager {
 
 	renderAddForm() {
 		setTimeout(() => {
-			const titleElem = document.querySelector('.todoApp .title'); 
+			const titleElem = document.querySelector('.todoApp .title');
+			const btnCancelElem = document.querySelector('.todoApp .btnCancel');
 			titleElem.focus();
+
+			btnCancelElem.addEventListener('click', () => {
+				this.currentlyAddingTodo = false;
+				this.render();
+			});
 		});
 		return /*html*/ `
 			<form class="addForm">
