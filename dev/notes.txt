@@ -3,20 +3,7 @@
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
 - .. localstorage page
-	- x make TodoManager class
-	- x make it update live
-	- x get suuid function
-	- x create initial todos
-	- x display todos
-	- x display with delete button
-		- x fontawesome trashcan
-	- x add button
-	- x add form
-	- x focus
-	- x cancel button
-	- x responsive
-	- x slider
-	- x add on add
+	.. add all other info
 	
 
 - settings page
