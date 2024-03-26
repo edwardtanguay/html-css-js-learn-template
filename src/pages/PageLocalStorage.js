@@ -1,5 +1,4 @@
 import { TodoManager } from "../classes/TodoManager.js";
-import { ConstructionSign } from "../components/ConstructionSign.js";
 import { Loading } from "../components/Loading.js";
 
 export const PageLocalStorage = () => {

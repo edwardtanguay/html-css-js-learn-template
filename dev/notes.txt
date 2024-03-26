@@ -3,8 +3,10 @@
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
 - .. localstorage page
-	- .. make TodoManager class
-		- .. make it update live
+	- x make TodoManager class
+	- x make it update live
+	- .. get suuid function
+	- .. create initial todos
 
 - settings page
 	- dark mode

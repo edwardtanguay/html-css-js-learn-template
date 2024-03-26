@@ -1,23 +1,25 @@
+import * as appData from '../appData.js';
+
 export class TodoManager {
 	constructor(mainElem) {
 		this.mainElem = mainElem;
 		this.loadInitialData();
-		this.render();
 	}
 
-	loadInitialData() {
-		this.todos = [111, 222, 333, 444];
+	async loadInitialData() {
+		this.todos = await appData.getTodos();
+		this.render();
 	}
 
 	render() {
 		this.mainElem.innerHTML = /*html*/ `
-<div class="todoApp">
-	<div>There are ${this.todos.length} todos.</div>
-	<div>${this.todos.map(todo => `<span>${todo}</span>`).join(', ')}
-	<div>
-	${this.renderAddButton()}
-	</div>
-</div>
+		<div class="todoApp">
+			<div>There are ${this.todos.length} todos.</div>
+			<div>${this.todos.map(todo => `<span>${todo}</span>`).join(', ')}
+			<div>
+			${this.renderAddButton()}
+			</div>
+		</div>
 		`;
 	}
 
