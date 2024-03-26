@@ -23,6 +23,7 @@ export class TodoManager {
 			return /*html*/ `
 					<div class="todo">
 						<div class="name">${todo.name}</div>
+						${this.renderDeleteIcon(todo)}
 					</div>
 					`;
 		}).join('')}
@@ -33,19 +34,22 @@ export class TodoManager {
 		`;
 	}
 
-	// renderAddButton() {
-	// 	setTimeout(() => {
-	// 		const btnAddElem = document.querySelector('.todoApp .add');
+	renderDeleteIcon(todo) {
+		const className = `deleteIcon-${todo.suuid}`;
+		setTimeout(() => {
+			const deleteIconElem = document.querySelector(`.todoApp .${className}`);
 
-	// 		btnAddElem.addEventListener('click', () => {
-	// 			this.todos.push(999);
-	// 			this.render();
-	// 		});
-	// 	});
+			console.log('className', className);
+			console.log('deleteIconElem',deleteIconElem);
 
-	// 	return /*html*/ `
-	// 	<button class="add">Add</button>
-	// 	`;
-	// }
+			deleteIconElem.addEventListener('click', () => {
+				this.render();
+			});
+		});
+
+		return /*html*/ `
+			<i class="fa fa-trash-o deleteIcon ${className}" aria-hidden="true"></i>
+		`;
+	}
 
 }

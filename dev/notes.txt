@@ -9,6 +9,7 @@
 	- x create initial todos
 	- x display todos
 	- .. display with delete button
+		- .. fontawesome trashcan
 
 - settings page
 	- dark mode

@@ -395,3 +395,16 @@ div.constructionSignArea {
 	border-radius: .5rem;
 	margin-bottom: 1rem;
 }
+
+.todoApp .todos .todo {
+	background-color: #ddd;
+	margin-bottom: .5rem;
+	padding: .5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.todoApp .todos .todo .deleteIcon {
+	cursor: pointer;
+}
