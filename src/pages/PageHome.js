@@ -29,6 +29,7 @@ export const PageHome = () => {
 	<li>can be easily <b>published to Vercel</b></li>
 	<li>has a similar <b>site structure</b> to JavaScript frameworks:
 		<img class="siteImage" src="src/images/siteStructure.png"/>
+		<img class="siteImage" src="src/images/frameworkStructure.png"/>
 	</li>
 </ul>
 
