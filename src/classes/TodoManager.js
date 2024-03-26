@@ -62,10 +62,19 @@ export class TodoManager {
 
 					<input type="text" class="title" >
 
-					<div class="starsArea">
-						<div>Stars: 1</div>
-						<input class="slider" type="range" min="1" max="100" value="50">
-						<div>5</div>
+					<div class="extraFields">
+						<div class="starsArea">
+							<div>Stars: 1</div>
+							<input class="slider" type="range" min="1" max="100" value="50">
+							<div>5</div>
+						</div>
+						<div class="inProgressArea">
+							<input type="checkbox" class="inProgressCheckbox" id="inProgressCheckbox"> <label for="inProgressCheckbox">In Progress</label>
+						</div>
+					</div>
+
+					<div class="buttonArea">
+						<button>Add</button>
 					</div>
 
 				</fieldset>

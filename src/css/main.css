@@ -412,6 +412,7 @@ div.constructionSignArea {
 	cursor: pointer;
 }
 
+
 .todoApp .addArea {
 	display: flex;
 	justify-content: center;
@@ -421,9 +422,9 @@ div.constructionSignArea {
 .todoApp .addForm fieldset {
 	padding: 1em;
 	margin-bottom: 1rem;
-	border: solid 1px #ccc;
+	border: solid 1px #777;
 	border-radius: 6px;
-	background-color: white;
+	background-color: #d9d9d9;
 }
 
 .todoApp .addForm fieldset legend {
@@ -437,10 +438,24 @@ div.constructionSignArea {
 
 .todoApp .addForm fieldset .starsArea {
 	display: flex;
-	margin-top: 1rem;
 	place-items: center;
 }
 
-.todoApp .addForm fieldset .starsArea .slider {
-	padding-top: -1rem;
+.todoApp .addForm fieldset .extraFields {
+	margin-top: 1rem;
+	display:flex;
+	place-items: center;
+	justify-content: space-between;
+}
+
+.todoApp .addForm fieldset .buttonArea {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: flex-end; 
+}
+
+.todoApp .addForm fieldset .buttonArea button {
+	font-size: 1rem;
+	width: 100%;
+	padding: .5rem;
 }
