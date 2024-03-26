@@ -208,7 +208,7 @@ div.employee .notes {
 div.errorMessage {
 	background-color: rgb(192, 31, 2);
 	color: yellow;
-	padding: 1rem 1rem .1rem 1rem;
+	padding: 1rem;
 	border-radius: .5rem;
 	width: fit-content;
 }
@@ -276,6 +276,10 @@ p.intro {
 
 div.constructionSignArea {
 	margin-top: 2rem;
+}
+
+.pageLocalStorage h3 {
+	font-size: 1.5rem;
 }
 
 /* mobile */

@@ -1,0 +1,52 @@
+import * as appData from '../../src/appData.js';
+
+export class TodoManager {
+	constructor(mainElem) {
+		this.mainElem = mainElem;
+		this.loadTodos();
+	}
+
+	async loadTodos() {
+		this.todos = await appData.getSkills();
+		this.render();
+	}
+
+	render() {
+		this.mainElem.innerHTML = /*html*/ `
+			<h3>Todos</h3>
+			<p>There are ${this.todos.length} todos.</p>
+			<hr/>
+			${this.todos.map(m => /*html*/ `<span>${m}</span>`).join(', ')}
+			<hr/>
+			${this.renderAddButton()}
+			${this.renderDeleteButton()}
+		`;
+	}
+
+	renderAddButton() {
+		setTimeout(() => {
+			const addButtonElem = document.querySelector('.tmAddButton');
+			addButtonElem.addEventListener('click', () => {
+				this.todos.push(999);
+				this.render();
+			});
+		}, 0);
+		return /*html*/ `
+			<button class="tmAddButton">Add</button>
+		`;
+	}
+
+	renderDeleteButton() {
+		setTimeout(() => {
+			const deleteButtonElem = document.querySelector('.tmDeleteButton');
+			deleteButtonElem.addEventListener('click', () => {
+				this.todos.pop();
+				this.render();
+			});
+		}, 0);
+		return /*html*/ `
+			<button class="tmDeleteButton">Delete</button>
+		`;
+	}
+
+}
