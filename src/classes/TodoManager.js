@@ -61,6 +61,7 @@ export class TodoManager {
 			const btnAddElem = document.querySelector('.todoApp .btnAdd');
 			const sliderElem = document.querySelector('.todoApp .slider');
 			const starScoreElem = document.querySelector('.todoApp .starScore');
+			const inProgressCheckboxElem = document.querySelector('.todoApp .inProgressCheckbox');
 			starScoreElem.innerText = String(starsDefault.toFixed(1));
 			titleElem.focus();
 
@@ -74,12 +75,14 @@ export class TodoManager {
 			});
 
 			btnAddElem.addEventListener('click', () => {
-				this.todos.push({
+				const newTodo = {
 					suuid: tools.generateSuuid(),
-					title: 'nnn',
-					stars: starsDefault,
-					inProgress: false
-				});
+					title: titleElem.value,
+					stars: Number(sliderElem.value),
+					inProgress: inProgressCheckboxElem.checked
+				};
+				this.todos.push(newTodo);
+				console.log('todo', newTodo);
 				this.currentlyAddingTodo = false;
 				this.render();
 			});
@@ -94,9 +97,10 @@ export class TodoManager {
 					<div class="extraFields">
 						<div class="starsArea">
 							<div class="starScore"></div>
-							<div>Stars: 1</div>
+							<div class="mobileStars">Stars (1-5)</div>
+							<div class="min">Stars: 1</div>
 							<input class="slider" type="range" min="1" max="5" value="3" step="0.1">
-							<div>5</div>
+							<div class="max">5</div>
 						</div>
 						<div class="inProgressArea">
 							<input type="checkbox" class="inProgressCheckbox" id="inProgressCheckbox"> <label for="inProgressCheckbox" class="inProgressText">In Progress</label>

@@ -14,10 +14,9 @@
 	- x add form
 	- x focus
 	- x cancel button
-	- .. constant refresh
-	- .. responsive
-	- .. slider
-	- .. add adds
+	- x responsive
+	- x slider
+	- x add on add
 	
 
 - settings page
