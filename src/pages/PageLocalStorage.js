@@ -1,3 +1,4 @@
+import { TodoManager } from "../classes/TodoManager.js";
 import { ConstructionSign } from "../components/ConstructionSign.js";
 import { Loading } from "../components/Loading.js";
 
@@ -7,7 +8,8 @@ export const PageLocalStorage = () => {
 		const contentElem = document.querySelector('.pageLocalStorage .content');
 
 		try {
-			contentElem.innerHTML = ConstructionSign();
+			const todoManager = new TodoManager(contentElem);
+			// contentElem.innerHTML = ConstructionSign();
 		}
 		catch (e) {
 			contentElem.innerHTML = '<div class="errorMessage">' + e.message + '</div>';

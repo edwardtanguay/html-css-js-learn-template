@@ -2,18 +2,10 @@
 	- REPO: https://github.com/edwardtanguay/html-css-js-learn-template
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
-- .. api data page
-	- x load both: jobs/skills
-		- (external JSON files)
-		- https://edwardtanguay.vercel.app/share/jobs.json
-		- https://edwardtanguay.vercel.app/share/skills.json
-	- x getFullJobs()
-	- x build and style FullJob
-	- .. fix responsive
-	- .. search jobs
+- .. localstorage page
+	- .. make TodoManager class
+		- .. make it update live
 
-- localstorage page
-	- flashcards
 - settings page
 	- dark mode
 	- simulate data loading time: 1, 3, 5 seconds
