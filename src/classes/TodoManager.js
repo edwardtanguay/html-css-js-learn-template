@@ -24,7 +24,7 @@ export class TodoManager {
 		${this.todos.map(todo => {
 			return /*html*/ `
 				<div class="todo" >
-					<div class="name">${todo.name}</div>
+					<div class="title">${todo.title}</div>
 					${this.renderDeleteIcon(todo)}
 				</div> 
 				`;
@@ -58,21 +58,16 @@ export class TodoManager {
 		return /*html*/ `
 			<form class="addForm">
 				<fieldset>
-					<legend>Your contact details:</legend>
-					<label for="fullName">Name:</label>
-					<input type="text"
-					name="fullName"
-					id="fullName">
+					<legend>New Todo</legend>
 
-					<label for="email">Email:</label>
-					<input type="email"
-					name="email"
-					id="email">
+					<input type="text" class="title" >
 
-					<label for="phone">Phone:</label>
-					<input type="tel"
-					name="phone"
-					id="phone">
+					<div class="starsArea">
+						<div>Stars: 1</div>
+						<input class="slider" type="range" min="1" max="100" value="50">
+						<div>5</div>
+					</div>
+
 				</fieldset>
 				
 			</form>

@@ -1,20 +1,20 @@
 [
 	{
 		"suuid": "RtbYbw",
-		"name": "Learn Astro",
-		"rank": 4.1,
+		"title": "Learn Astro",
+		"stars": 4.1,
 		"inProgress": true
 	},
 	{
 		"suuid": "ZzORWF",
-		"name": "Go to store",
-		"rank": 2.5,
+		"title": "Go to store",
+		"stars": 2.5,
 		"inProgress": false
 	},
 	{
 		"suuid": "qSl64B",
-		"name": "Run a 5K",
-		"rank": 3.1,
+		"title": "Run a 5K",
+		"stars": 3.1,
 		"inProgress": false
 	}
 ]

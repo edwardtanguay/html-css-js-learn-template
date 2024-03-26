@@ -417,3 +417,30 @@ div.constructionSignArea {
 	justify-content: center;
 	margin-bottom: 1rem;
 }
+
+.todoApp .addForm fieldset {
+	padding: 1em;
+	margin-bottom: 1rem;
+	border: solid 1px #ccc;
+	border-radius: 6px;
+	background-color: white;
+}
+
+.todoApp .addForm fieldset legend {
+	font-variant: small-caps;
+}
+
+.todoApp .addForm fieldset .title {
+	width: 100%;
+	font-size: 1.4rem;
+}
+
+.todoApp .addForm fieldset .starsArea {
+	display: flex;
+	margin-top: 1rem;
+	place-items: center;
+}
+
+.todoApp .addForm fieldset .starsArea .slider {
+	padding-top: -1rem;
+}
