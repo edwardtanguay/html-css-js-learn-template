@@ -655,5 +655,10 @@ div.constructionSignArea {
 }
 
 .pageSettings .area {
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
+}
+
+.pageSettings .info {
+	margin-top: .5rem;
+	line-height: 1.2rem;
 }

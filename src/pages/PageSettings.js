@@ -27,7 +27,7 @@ export const PageSettings = () => {
 	<form class="siteSettings">
 
 		<div class="area siteModeArea">
-			Display: 
+			<b>Display:</b> 
 			<select class="siteModeSelector">
 				<option value="dark" ${siteMode === 'dark' ? 'selected' : ''}>dark mode</option>
 				<option value="light" ${siteMode === 'light' ? 'selected' : ''}>light Mode</option>
@@ -35,13 +35,14 @@ export const PageSettings = () => {
 		</div>
 
 		<div class="area mockWaitArea">
-			Mock wait: 
+			<b>Mock wait:</b> 
 			<select class="mockWaitSecondsSelector">
 				<option value="0" ${mockWaitSeconds === 0 ? 'selected' : ''}>none</option>
 				<option value="1" ${mockWaitSeconds === 1 ? 'selected' : ''}>1 second</option>
 				<option value="3" ${mockWaitSeconds === 3 ? 'selected' : ''}>3 seconds</option>
 				<option value="5" ${mockWaitSeconds === 5 ? 'selected' : ''}>5 seconds</option>
 			</select>
+			<div class="info"><i>This allows you to see how the pages with API calls work when loading time is longer.</i></div>
 		</div>
 	</form>
 </section>
