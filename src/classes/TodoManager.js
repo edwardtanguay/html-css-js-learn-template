@@ -75,7 +75,7 @@ export class TodoManager {
 				</div> 
 			`;
 		} else {
-			return this.renderForm('edit');
+			return this.renderForm('edit', todo);
 		}
 	}
 
@@ -114,17 +114,22 @@ export class TodoManager {
 		}
 	}
 
-	renderForm(formStatus = 'add') {
+	renderForm(formStatus = 'add', editTodo = null) {
 		if (formStatus === 'edit' || (formStatus === 'add' && !this.userIsEditingATodo())) {
 			setTimeout(() => {
 				const starsDefault = 3;
-				const titleElem = document.querySelector('.todoApp .title');
+				const titleElem = document.querySelector('.todoApp input.title');
 				const btnCancelElem = document.querySelector('.todoApp .btnCancel');
 				const btnAddElem = document.querySelector('.todoApp .btnAdd');
 				const sliderElem = document.querySelector('.todoApp .slider');
 				const starScoreElem = document.querySelector('.todoApp .starScore');
 				const inProgressCheckboxElem = document.querySelector('.todoApp .inProgressCheckbox');
 				const formInProgressIconElem = document.querySelector('.todoApp .formInProgressIcon');
+
+				if (formStatus === 'edit') {
+					console.log('titleElem', titleElem);
+					titleElem.value = editTodo.title;
+				}
 
 				starScoreElem.innerText = String(starsDefault.toFixed(1));
 				titleElem.focus();
