@@ -11,8 +11,8 @@
 	- x reset to default todos
 	- .. enable edit
 		- x create edit icon
-		- .. hover green and red
-		- when edit click display form, cancel goes back
+		- x hover green and red
+		- .. when edit click display form, cancel goes back
 		- enable form to edit 	
 
 - settings page

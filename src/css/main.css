@@ -607,3 +607,7 @@ div.constructionSignArea {
 .todoApp .manageIcons .editIcon:hover {
 	color: rgb(36, 153, 36);
 }
+
+.todoApp .btnResetApp {
+	color: rgb(150, 5, 5);
+}
