@@ -3,11 +3,7 @@
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
 - settings page
-	- .. simulate data loading time: 1, 3, 5 seconds
-		- .. use it
-	- simulate random data loading errors: yes | no
+	- .. simulate random data loading errors: yes | no
+		- .. make form control first
 
-- correct all pageIdCodes
-- copy home page text to 
-
-- use tools.js somehow
+- copy home page text to repository readme
