@@ -1,9 +1,5 @@
 # html-css-js-learn-template
 
-This template is part of [Edward's tech starters](https://tanguay-eu.vercel.app/starters) project.
-
-![grafik](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/400e2670-afb0-4529-8d54-02497cb32666)
-
 ## project links
 
 - repo: https://github.com/edwardtanguay/html-css-js-learn-template
@@ -61,3 +57,7 @@ Regardless of the above limitations, if you want to learn the basics of web deve
   - search forms
 - local-storage CRUD
   - one page shows how you can allow a user to create/read/update/delete data which is stored in the browser
+
+This template is part of [Edward's tech starters](https://tanguay-eu.vercel.app/starters) project.
+
+![grafik](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/400e2670-afb0-4529-8d54-02497cb32666)
