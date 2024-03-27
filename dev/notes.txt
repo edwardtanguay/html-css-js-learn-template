@@ -16,9 +16,9 @@
 		- x make click edit work
 		- x also hide add form
 		- .. enable form to edit 	
-			- .. change all edits over
-				- x text and color
-				- cancel button
+			- x text and color
+			- x cancel button
+			- .. add data on edit
 
 - settings page
 	- dark mode
