@@ -34,7 +34,7 @@ export class TodoManager {
 		<h3>Todo App</h3>
 		<div class="numberOfTodos">There are ${this.todos.length} todos.</div>
 	</div>
-	${!this.currentlyAddingTodo ? this.renderAddArea() : this.renderAddForm()}
+	${!this.currentlyAddingTodo ? this.renderAddArea() : this.renderForm()}
 	<div class="todos">
 		${this.todos.map(todo => {
 			return /*html*/ `
@@ -75,7 +75,7 @@ export class TodoManager {
 				</div> 
 			`;
 		} else {
-			return this.renderAddForm('edit');
+			return this.renderForm('edit');
 		}
 	}
 
@@ -114,7 +114,7 @@ export class TodoManager {
 		}
 	}
 
-	renderAddForm(formStatus = 'add') {
+	renderForm(formStatus = 'add') {
 		if (formStatus === 'edit' || (formStatus === 'add' && !this.userIsEditingATodo())) {
 			setTimeout(() => {
 				const starsDefault = 3;
