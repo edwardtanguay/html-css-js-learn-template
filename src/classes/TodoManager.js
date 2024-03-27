@@ -120,11 +120,16 @@ export class TodoManager {
 				const starsDefault = 3;
 				const titleElem = document.querySelector('.todoApp input.title');
 				const btnCancelElem = document.querySelector('.todoApp .btnCancel');
-				const btnAddElem = document.querySelector('.todoApp .btnAdd');
+				const btnSaveElem = document.querySelector('.todoApp .btnAdd');
 				const sliderElem = document.querySelector('.todoApp .slider');
 				const starScoreElem = document.querySelector('.todoApp .starScore');
 				const inProgressCheckboxElem = document.querySelector('.todoApp .inProgressCheckbox');
 				const formInProgressIconElem = document.querySelector('.todoApp .formInProgressIcon');
+				const formElem = document.querySelector('.todoApp form');
+
+				formElem.addEventListener('submit', (e) => {
+					e.preventDefault();
+				})
 
 				if (formStatus === 'edit') {
 					titleElem.value = editTodo.title;
@@ -153,17 +158,25 @@ export class TodoManager {
 					starScoreElem.innerText = Number(sliderElem.value).toFixed(1);
 				});
 
-				btnAddElem.addEventListener('click', () => {
-					if (titleElem.value.trim() !== '') {
-						const newTodo = {
-							suuid: tools.generateSuuid(),
-							title: titleElem.value,
-							stars: Number(sliderElem.value),
-							inProgress: inProgressCheckboxElem.checked
-						};
-						this.todos.push(newTodo);
+				btnSaveElem.addEventListener('click', () => {
+					if (formStatus === 'add') {
+						if (titleElem.value.trim() !== '') {
+							const newTodo = {
+								suuid: tools.generateSuuid(),
+								title: titleElem.value,
+								stars: Number(sliderElem.value),
+								inProgress: inProgressCheckboxElem.checked
+							};
+							this.todos.push(newTodo);
+							this.saveInLocalStorage();
+							this.currentlyAddingTodo = false;
+							this.render();
+						}
+					} else {
+						editTodo.title = titleElem.value;
+						editTodo.stars = Number(sliderElem.value);
+						this.cancelAllEditingOfTodos();
 						this.saveInLocalStorage();
-						this.currentlyAddingTodo = false;
 						this.render();
 					}
 				});
