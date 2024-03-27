@@ -3,7 +3,9 @@
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
 - settings page
-	- dark mode
+	- .. dark mode
+		- .. make dropdown
+	
 	- simulate data loading time: 1, 3, 5 seconds
 	- simulate data loading errors: yes | no
 
