@@ -42,7 +42,7 @@ export const PageSettings = () => {
 				<option value="3" ${mockWaitSeconds === 3 ? 'selected' : ''}>3 seconds</option>
 				<option value="5" ${mockWaitSeconds === 5 ? 'selected' : ''}>5 seconds</option>
 			</select>
-			<div class="info"><i>This allows you to see how the pages with API calls work when loading time is longer.</i></div>
+			<div class="info"><i>This allows you to see how the pages with API calls ("Local JSON Data" and "External API Data") work when loading time is longer.</i></div>
 		</div>
 	</form>
 </section>

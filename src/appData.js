@@ -19,7 +19,7 @@ export const getEmployees = () => {
 				console.log('ERROR', e);
 				reject({ message: generalErrorMessage() });
 			}
-		}, 0);
+		}, appData.getMockWaitSeconds() * 1000);
 	});
 };
 
@@ -78,7 +78,7 @@ export const getFullJobs = () => {
 				console.log('ERROR', e);
 				reject({ message: generalErrorMessage() });
 			}
-		}, 0);
+		}, appData.getMockWaitSeconds() * 1000);
 	});
 };
 
