@@ -19,7 +19,8 @@
 			- x text and color
 			- x cancel button
 			- x add data on edit
-		- .. change button
+		- x change button
+		- .. edit instead of save
 
 - settings page
 	- dark mode
