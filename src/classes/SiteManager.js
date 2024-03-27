@@ -15,7 +15,7 @@ export class SiteManager {
 	setDarkMode() {
 		const bodyElem = document.querySelector('body');
 
-		bodyElem.style.backgroundColor = '#555';
+		bodyElem.style.backgroundColor = '#777';
 	}
 
 	setLightMode() {
