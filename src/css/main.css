@@ -561,6 +561,7 @@ div.constructionSignArea {
 
 .progressCurrent {
 	animation: spin 1s linear infinite;
+	color: #333;
 }
 
 @keyframes spin {
@@ -576,4 +577,8 @@ div.constructionSignArea {
 .todoApp .addForm fieldset .inProgressArea {
 	display: flex;
 	gap: .5rem;
+}
+
+.formInProgressIcon {
+	margin-top: .1rem;
 }

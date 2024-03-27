@@ -27,7 +27,7 @@ export class TodoManager {
 				<div class="todo" >
 					<div class="starTitle">
 						<div class="itemStarScore">${todo.stars.toFixed(1)}</div>
-						${this.renderProgressIcon(todo)}
+						${this.renderProgressIcon(todo.inProgress)}
 						<div class="title">${todo.title}</div>
 					</div>
 					${this.renderDeleteIcon(todo)}
@@ -41,9 +41,9 @@ export class TodoManager {
 		`;
 	}
 
-	renderProgressIcon(todo) {
+	renderProgressIcon(inProgress) {
 		return /*html*/ `
-		<i class="fa fa-refresh ${todo.inProgress ? 'progressCurrent' : 'progressStopped'}" aria-hidden="true"></i>
+		<i class="fa fa-refresh ${inProgress ? 'progressCurrent' : 'progressStopped'}" aria-hidden="true"></i>
 		`;
 	}
 
@@ -71,8 +71,15 @@ export class TodoManager {
 			const sliderElem = document.querySelector('.todoApp .slider');
 			const starScoreElem = document.querySelector('.todoApp .starScore');
 			const inProgressCheckboxElem = document.querySelector('.todoApp .inProgressCheckbox');
+			const formInProgressIconElem = document.querySelector('.todoApp .formInProgressIcon');
+			
 			starScoreElem.innerText = String(starsDefault.toFixed(1));
 			titleElem.focus();
+			formInProgressIconElem.innerHTML = this.renderProgressIcon(false);
+
+			inProgressCheckboxElem.addEventListener('click', () => {
+				formInProgressIconElem.innerHTML = this.renderProgressIcon(inProgressCheckboxElem.checked);
+			});
 
 			btnCancelElem.addEventListener('click', () => {
 				this.currentlyAddingTodo = false;
@@ -113,10 +120,9 @@ export class TodoManager {
 						</div>
 						<div class="inProgressArea">
 							<div>
-								<input type="checkbox" class="inProgressCheckbox" id="inProgressCheckbox"> <label for="inProgressCheckbox" class="inProgressText">In Progress</label>
-								<div class="formInProgressIcon"></div>
+								<input type="checkbox" class="inProgressCheckbox" id="inProgressCheckbox"><label for="inProgressCheckbox" class="inProgressText">In Progress</label>
 							</div>
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							<div class="formInProgressIcon"></div>
 						</div>
 					</div>
 
