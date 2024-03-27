@@ -15,10 +15,11 @@
 		- x when edit click display form, cancel goes back
 		- x make click edit work
 		- x also hide add form
-		- .. enable form to edit 	
+		- x enable form to edit 	
 			- x text and color
 			- x cancel button
-			- .. add data on edit
+			- x add data on edit
+		- .. change button
 
 - settings page
 	- dark mode

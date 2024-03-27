@@ -194,7 +194,7 @@ export class TodoManager {
 
 					<div class="buttonArea">
 						<button type="button" class="btnCancel">Cancel</button>
-						<button type="button" class="btnAdd">Add</button>
+						<button type="button" class="btnAdd">${formStatus === 'add' ? 'Add' : 'Save Changes'}</button>
 					</div>
 
 				</fieldset>
