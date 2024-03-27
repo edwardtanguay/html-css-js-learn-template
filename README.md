@@ -41,9 +41,9 @@
 -   you **cannot install npm packages** as you can in JavaScript Frameworks
 -   not being able to install npm packages means that you **cannot use advanced web development tools such as TypeScript, Sass, Tailwind, Zod, testing frameworks, etc.** or if you do, they are cumbersome to set up (TypeScript, Sass, testing frameworks) or are officially not recommended for HTML/CSS/JavaScript sites (Tailwind)
 -   Router has **no page bookmarking** and **no page refreshing** support, i.e. the URL does not reflect which page the user is on and so cannot bring the user back to the same page when clicking a bookmark or refreshing the page, and this is not possible since there is no Node server present as there is in JavaScript frameworks
-    Router can display **no 404 pages**
-    no **state variable support** which means adding interactivity to the site (with addEventListener) becomes exponentially complex, e.g. dynamic searching, resorting, etc.
-    VSCode **cannot auto-format HTML** in string literals
+-   Router can display **no 404 pages**
+-   no **state variable support** which means adding interactivity to the site (with addEventListener) becomes exponentially complex, e.g. dynamic searching, resorting, etc.
+-   VSCode **cannot auto-format HTML** in string literals
 
 ## learn JavaScript frameworks
 
