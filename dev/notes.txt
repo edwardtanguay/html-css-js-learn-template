@@ -3,8 +3,10 @@
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
 - .. localstorage page
-	- .. show spinner on add
-	- order by stars
+	- x show spinner on add
+	- .. order by stars
+	- save in localStorage
+	- load from localStorage
 	
 
 - settings page

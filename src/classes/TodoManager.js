@@ -14,6 +14,7 @@ export class TodoManager {
 	}
 
 	render() {
+		this.todos.sort((a,b) => a.stars < b.stars ? 1 : -1)
 		this.mainElem.innerHTML = /*html*/ `
 <div class="todoApp">
 	<div class="header">
