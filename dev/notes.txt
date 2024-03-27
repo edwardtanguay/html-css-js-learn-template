@@ -4,7 +4,8 @@
 
 - settings page
 	- .. dark mode
-		- .. make dropdown
+		- x make dropdown
+		- .. make SiteManager and process for light/dark mode
 	
 	- simulate data loading time: 1, 3, 5 seconds
 	- simulate data loading errors: yes | no
