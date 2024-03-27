@@ -25,3 +25,7 @@ export const determineResponsiveStatus = () => {
 		config.setResponsiveStatus('mobile');
 	}
 };
+
+export const defaultSiteMode = () => {
+	return 'light';
+}

@@ -1,5 +1,6 @@
 import * as appData from './appData.js';
 import { generalErrorMessage } from "./config.js";
+import * as config from './config.js';
 
 export const getEmployees = () => {
 	return new Promise((resolve, reject) => {
@@ -145,3 +146,16 @@ export const getTodos = () => {
 		}, 0);
 	});
 };
+
+export const getSiteMode = () => {
+	const _siteMode = localStorage.getItem('siteMode');
+	if (_siteMode) {
+		return _siteMode;
+	} else {
+		return config.defaultSiteMode();
+	}
+}
+
+export const setSiteMode = (siteMode) => {
+	localStorage.setItem('siteMode', siteMode);
+}

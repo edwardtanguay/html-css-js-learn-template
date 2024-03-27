@@ -647,3 +647,10 @@ div.constructionSignArea {
 	background-color: #c0c0c0;
 }
 
+.siteMode {
+	font-size: 1.1rem;
+}
+
+.siteSettings {
+	margin-top: 1.5rem;
+}
