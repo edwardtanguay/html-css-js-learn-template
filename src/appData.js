@@ -172,3 +172,16 @@ export const getMockWaitSeconds = () => {
 export const setMockWaitSeconds = (mockWaitSeconds) => {
 	localStorage.setItem('mockWaitSeconds', mockWaitSeconds);
 };
+
+export const getSimulateErrors = () => {
+	const _simulateErrors = localStorage.getItem('simulateErrors');
+	if (_simulateErrors) {
+		return _simulateErrors;
+	} else {
+		return config.defaultSimulateErrors();
+	}
+};
+
+export const setSimulateErrors = (simulateErrors) => {
+	localStorage.setItem('simulateErrors', simulateErrors);
+};

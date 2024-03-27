@@ -4,11 +4,14 @@ import { SiteManager } from '../classes/SiteManager.js';
 export const PageSettings = () => {
 	const siteMode = appData.getSiteMode();
 	const mockWaitSeconds = appData.getMockWaitSeconds();
+	const simulateErrors = appData.getSimulateErrors();
+	console.log(simulateErrors);
 	const siteManager = new SiteManager();
 
 	setTimeout(async () => {
 		const siteModeSelectorElem = document.querySelector('.siteModeSelector');
 		const mockWaitSecondsSelector = document.querySelector('.mockWaitSecondsSelector');
+		const simulateErrorsSelector = document.querySelector('.simulateErrorsSelector');
 
 		siteModeSelectorElem.addEventListener('change', (e) => {
 			appData.setSiteMode(e.target.value);
@@ -17,6 +20,10 @@ export const PageSettings = () => {
 
 		mockWaitSecondsSelector.addEventListener('change', (e) => {
 			appData.setMockWaitSeconds(Number(e.target.value));
+		});
+
+		simulateErrorsSelector.addEventListener('change', (e) => {
+			appData.setSimulateErrors(e.target.value);
 		});
 	}, 0);
 
@@ -43,6 +50,15 @@ export const PageSettings = () => {
 				<option value="5" ${mockWaitSeconds === 5 ? 'selected' : ''}>5 seconds</option>
 			</select>
 			<div class="info"><i>This allows you to see how the pages with API calls ("Local JSON Data" and "External API Data") work when loading time is longer.</i></div>
+		</div>
+
+		<div class="area simulateErrorsArea">
+			<b>Simulate Errors:</b> 
+			<select class="simulateErrorsSelector">
+				<option value="yes" ${simulateErrors === 'yes' ? 'selected' : ''}>yes</option>
+				<option value="no" ${simulateErrors === 'no' ? 'selected' : ''}>no</option>
+			</select>
+			<div class="info"><i>This will randomly an data-loading error (50/50) in the pages with API calls ("Local JSON Data" and "External API Data") so you can see how errors are handled.</i></div>
 		</div>
 	</form>
 </section>

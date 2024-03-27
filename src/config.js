@@ -33,3 +33,7 @@ export const defaultSiteMode = () => {
 export const defaultMockWaitSeconds = () => {
 	return 0;
 }
+
+export const defaultSimulateErrors = () => {
+	return 'no';
+}
