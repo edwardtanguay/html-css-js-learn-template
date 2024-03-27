@@ -15,17 +15,29 @@
 
 ![grafik](https://github.com/edwardtanguay/html-css-js-template/assets/446574/f54205f9-1ad7-4d5f-9ba9-333a8921b05d)
 
-## limitations
+## purpose
 
-- HTML/CSS/JavaScript websites in general have limitations in terms of user features and developer experience
-	- you can't auto-format HTML inside string literals
+- to give you a useful HTML/CSS/JS **starter site** with many **features**
+- to make you aware of the **limitations** of HTML/CSS/JavaScript sites (sites you can start in the browser or with VSCode's Live Server extension)
+- to make clear why as a web developer you should instead learn **JavaScript frameworks**, e.g. **React, Vue, Angular** (sites which require Node and which you start with **npm run dev**)
 
-![grafik](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/8171798a-be2a-4da4-9dfb-26c2101ab8a8)
+## features
 
-- this site is meant to be an academic exercise in order to learn the limits of HTML/CSS/JavaScript sites
-- if you want more functionality
-  - e.g. if you want to have a backend CRUD API, to use TypeScript, Sass, Tailwind, axios, etc.
-- and especially if you are studying to work as a web developer
+- simple **Router**
+- nested **components**
+- displays data from **local JSON files**
+- displays data from **third-party APIs**
+- allows user to create/edit/delete data with **localStorage CRUD**
+- has central **data-loading component** (appData)
+- allows user to **change site** (e.g. dark mode)
+- **responsive** design including mobile hambuger menu
+- **Font Awesome** icons
+- can be easily **published to Vercel**
+- has a similar **site structure** to JavaScript frameworks: 
+
+
+
+
 - then spend your time instead learning **JavaScript frameworks**:
 	- [React](https://react.dev) / [Next.js](https://nextjs.org)
 	- [Vue](https://vuejs.org) / [Nuxt](https://nuxt.com)
