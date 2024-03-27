@@ -555,7 +555,11 @@ div.constructionSignArea {
 	gap: .5rem;
 }
 
-.progressSpinner {
+.progressStopped {
+	color: #888;
+}
+
+.progressCurrent {
 	animation: spin 1s linear infinite;
 }
 
