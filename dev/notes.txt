@@ -12,8 +12,9 @@
 	- .. enable edit
 		- x create edit icon
 		- x hover green and red
-		- .. when edit click display form, cancel goes back
-		- enable form to edit 	
+		- x when edit click display form, cancel goes back
+		- make click edit work
+		- .. enable form to edit 	
 
 - settings page
 	- dark mode

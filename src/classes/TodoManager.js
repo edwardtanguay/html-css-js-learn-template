@@ -206,7 +206,8 @@ export class TodoManager {
 			setTimeout(() => {
 				const editIconElem = document.querySelector(`.todoApp .${className}`);
 				editIconElem.addEventListener('click', () => {
-					alert('edit clicked for ' + todo.suuid);
+					todo.userIsEditing = true;
+					this.render();
 				});
 			});
 
