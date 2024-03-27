@@ -38,6 +38,30 @@ export class TodoManager {
 	<div class="todos">
 		${this.todos.map(todo => {
 			return /*html*/ `
+				${this.renderTodo(todo)}
+				`;
+		}).join('')}
+		<div class="buttonPanel">
+			<button type="button" class="btnResetApp">Reset app to default todos</button>
+		</div>
+	</div>
+		`;
+	}
+
+	userIsEditingATodo() {
+		const numberOfTodosBeingEdited = this.todos.reduce((acc, todo) => {
+			if (todo.userIsEditing) {
+				return acc + 1;
+			} else {
+				return acc;
+			}
+		}, 0);
+		return numberOfTodosBeingEdited !== 0;
+	}
+
+	renderTodo(todo) {
+		if (!todo.userIsEditing) {
+			return /*html*/ `
 				<div class="todo" >
 					<div class="starTitle">
 						<div class="itemStarScore">${todo.stars.toFixed(1)}</div>
@@ -49,13 +73,12 @@ export class TodoManager {
 						${this.renderDeleteIcon(todo)}
 					</div>
 				</div> 
-				`;
-		}).join('')}
-		<div class="buttonPanel">
-			<button type="button" class="btnResetApp">Reset app to default todos</button>
-		</div>
-	</div>
-		`;
+			`;
+		} else {
+			return /*html*/ `
+				<div>editing</div>
+			`;
+		}
 	}
 
 	renderProgressIcon(inProgress) {
@@ -178,17 +201,21 @@ export class TodoManager {
 	}
 
 	renderEditIcon(todo) {
-		const className = `editIcon-${todo.suuid}`;
-		setTimeout(() => {
-			const editIconElem = document.querySelector(`.todoApp .${className}`);
-			editIconElem.addEventListener('click', () => {
-				alert('edit clicked for ' + todo.suuid)
+		if (!this.userIsEditingATodo()) {
+			const className = `editIcon-${todo.suuid}`;
+			setTimeout(() => {
+				const editIconElem = document.querySelector(`.todoApp .${className}`);
+				editIconElem.addEventListener('click', () => {
+					alert('edit clicked for ' + todo.suuid);
+				});
 			});
-		});
 
-		return /*html*/ `
+			return /*html*/ `
 			<i class="fa fa-pencil editIcon ${className}" aria-hidden="true"></i>
 		`;
+		} else {
+			return '';
+		}
 	}
 
 }
