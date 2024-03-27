@@ -127,10 +127,6 @@ export class TodoManager {
 				const formInProgressIconElem = document.querySelector('.todoApp .formInProgressIcon');
 				const formElem = document.querySelector('.todoApp form');
 
-				formElem.addEventListener('submit', (e) => {
-					e.preventDefault();
-				})
-
 				if (formStatus === 'edit') {
 					titleElem.value = editTodo.title;
 					sliderElem.value = editTodo.stars;
@@ -158,7 +154,7 @@ export class TodoManager {
 					starScoreElem.innerText = Number(sliderElem.value).toFixed(1);
 				});
 
-				btnSaveElem.addEventListener('click', () => {
+				const saveForm = () => {
 					if (formStatus === 'add') {
 						if (titleElem.value.trim() !== '') {
 							const newTodo = {
@@ -179,7 +175,16 @@ export class TodoManager {
 						this.saveInLocalStorage();
 						this.render();
 					}
+				}
+
+				btnSaveElem.addEventListener('click', () => {
+					saveForm();
 				});
+
+				formElem.addEventListener('submit', (e) => {
+					saveForm();
+				})
+
 			});
 
 			return /*html*/ `
