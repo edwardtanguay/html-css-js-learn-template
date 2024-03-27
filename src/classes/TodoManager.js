@@ -151,6 +151,7 @@ export class TodoManager {
 			const deleteIconElem = document.querySelector(`.todoApp .${className}`);
 			deleteIconElem.addEventListener('click', () => {
 				this.todos = this.todos.filter(m => m.suuid !== todo.suuid);
+				this.saveInLocalStorage();
 				this.render();
 			});
 		});

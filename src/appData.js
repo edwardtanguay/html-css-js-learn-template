@@ -124,13 +124,18 @@ export const getTodos = () => {
 	return new Promise((resolve, reject) => {
 		setTimeout(async () => {
 			try {
-				const response = await fetch('/src/data/todos.json');
-				const todos = await response.json();
-				if (response.ok) {
-					resolve(todos);
+				const _todos = localStorage.getItem('todos');
+				if (_todos) {
+					resolve(JSON.parse(_todos));
 				} else {
-					console.log('ERROR', e);
-					reject({ message: generalErrorMessage() });
+					const response = await fetch('/src/data/todos.json');
+					const todos = await response.json();
+					if (response.ok) {
+						resolve(todos);
+					} else {
+						console.log('ERROR', e);
+						reject({ message: generalErrorMessage() });
+					}
 				}
 			}
 			catch (e) {
