@@ -5,7 +5,7 @@
 - repo: https://github.com/edwardtanguay/html-css-js-learn-template
 - live: https://html-css-js-learn-template.vercel.app
 
-![grafik](https://github.com/edwardtanguay/html-css-js-framework/assets/446574/4530cedd-b97a-4268-b1cf-aa4d8a53c4de)
+![htmlcssjsdemo](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/93bd1564-a828-4d07-846f-e41dc82cca9f)
 
 ## setup and start
 
