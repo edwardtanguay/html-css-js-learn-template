@@ -5,8 +5,8 @@
 - .. localstorage page
 	- x show spinner on add
 	- x order by stars
-	- .. don't add if blank
-	- save in localStorage
+	- x don't add if blank
+	- .. save in localStorage
 	- load from localStorage
 	- add 	
 

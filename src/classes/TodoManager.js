@@ -63,6 +63,10 @@ export class TodoManager {
 		`;
 	}
 
+	saveInLocalStorage() {
+		localStorage.setItem('todos', JSON.stringify(this.todos));
+	}
+
 	renderAddForm() {
 		setTimeout(() => {
 			const starsDefault = 3;
@@ -100,11 +104,13 @@ export class TodoManager {
 						inProgress: inProgressCheckboxElem.checked
 					};
 					this.todos.push(newTodo);
+					this.saveInLocalStorage();
 					this.currentlyAddingTodo = false;
 					this.render();
 				}
 			});
 		});
+
 		return /*html*/ `
 			<form class="addForm">
 				<fieldset>
