@@ -21,7 +21,7 @@
 
 ## features
 
--   simple <span style="color: yellow">**Router**</span>
+-   simple <span style="color: yellow">Router</span>
 -   nested **components**
 -   displays data from **local JSON files**
 -   displays data from **third-party APIs**
