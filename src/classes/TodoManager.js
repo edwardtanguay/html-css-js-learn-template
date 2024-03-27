@@ -130,12 +130,14 @@ export class TodoManager {
 					titleElem.value = editTodo.title;
 					sliderElem.value = editTodo.stars;
 					starScoreElem.innerText = String(editTodo.stars);
+					inProgressCheckboxElem.checked = editTodo.inProgress;
+					formInProgressIconElem.innerHTML = this.renderProgressIcon(editTodo.inProgress);
 				} else {
 					starScoreElem.innerText = String(starsDefault.toFixed(1));
+					formInProgressIconElem.innerHTML = this.renderProgressIcon(false);
 				}
 
 				titleElem.focus();
-				formInProgressIconElem.innerHTML = this.renderProgressIcon(false);
 
 				inProgressCheckboxElem.addEventListener('click', () => {
 					formInProgressIconElem.innerHTML = this.renderProgressIcon(inProgressCheckboxElem.checked);
