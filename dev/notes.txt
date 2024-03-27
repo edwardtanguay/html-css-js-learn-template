@@ -2,9 +2,4 @@
 	- REPO: https://github.com/edwardtanguay/html-css-js-learn-template
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
-- settings page
-	- .. simulate random data loading errors: yes | no
-		- x make form control first
-		- .. handle yes
-
-- copy home page text to repository readme
+- ..  copy home page text to repository readme
