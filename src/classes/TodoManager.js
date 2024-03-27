@@ -111,50 +111,51 @@ export class TodoManager {
 	}
 
 	renderAddForm() {
-		setTimeout(() => {
-			const starsDefault = 3;
-			const titleElem = document.querySelector('.todoApp .title');
-			const btnCancelElem = document.querySelector('.todoApp .btnCancel');
-			const btnAddElem = document.querySelector('.todoApp .btnAdd');
-			const sliderElem = document.querySelector('.todoApp .slider');
-			const starScoreElem = document.querySelector('.todoApp .starScore');
-			const inProgressCheckboxElem = document.querySelector('.todoApp .inProgressCheckbox');
-			const formInProgressIconElem = document.querySelector('.todoApp .formInProgressIcon');
+		if (!this.userIsEditingATodo()) {
+			setTimeout(() => {
+				const starsDefault = 3;
+				const titleElem = document.querySelector('.todoApp .title');
+				const btnCancelElem = document.querySelector('.todoApp .btnCancel');
+				const btnAddElem = document.querySelector('.todoApp .btnAdd');
+				const sliderElem = document.querySelector('.todoApp .slider');
+				const starScoreElem = document.querySelector('.todoApp .starScore');
+				const inProgressCheckboxElem = document.querySelector('.todoApp .inProgressCheckbox');
+				const formInProgressIconElem = document.querySelector('.todoApp .formInProgressIcon');
 
-			starScoreElem.innerText = String(starsDefault.toFixed(1));
-			titleElem.focus();
-			formInProgressIconElem.innerHTML = this.renderProgressIcon(false);
+				starScoreElem.innerText = String(starsDefault.toFixed(1));
+				titleElem.focus();
+				formInProgressIconElem.innerHTML = this.renderProgressIcon(false);
 
-			inProgressCheckboxElem.addEventListener('click', () => {
-				formInProgressIconElem.innerHTML = this.renderProgressIcon(inProgressCheckboxElem.checked);
-			});
+				inProgressCheckboxElem.addEventListener('click', () => {
+					formInProgressIconElem.innerHTML = this.renderProgressIcon(inProgressCheckboxElem.checked);
+				});
 
-			btnCancelElem.addEventListener('click', () => {
-				this.currentlyAddingTodo = false;
-				this.render();
-			});
-
-			sliderElem.addEventListener('change', () => {
-				starScoreElem.innerText = Number(sliderElem.value).toFixed(1);
-			});
-
-			btnAddElem.addEventListener('click', () => {
-				if (titleElem.value.trim() !== '') {
-					const newTodo = {
-						suuid: tools.generateSuuid(),
-						title: titleElem.value,
-						stars: Number(sliderElem.value),
-						inProgress: inProgressCheckboxElem.checked
-					};
-					this.todos.push(newTodo);
-					this.saveInLocalStorage();
+				btnCancelElem.addEventListener('click', () => {
 					this.currentlyAddingTodo = false;
 					this.render();
-				}
-			});
-		});
+				});
 
-		return /*html*/ `
+				sliderElem.addEventListener('change', () => {
+					starScoreElem.innerText = Number(sliderElem.value).toFixed(1);
+				});
+
+				btnAddElem.addEventListener('click', () => {
+					if (titleElem.value.trim() !== '') {
+						const newTodo = {
+							suuid: tools.generateSuuid(),
+							title: titleElem.value,
+							stars: Number(sliderElem.value),
+							inProgress: inProgressCheckboxElem.checked
+						};
+						this.todos.push(newTodo);
+						this.saveInLocalStorage();
+						this.currentlyAddingTodo = false;
+						this.render();
+					}
+				});
+			});
+
+			return /*html*/ `
 			<form class="addForm">
 				<fieldset>
 					<legend>New Todo</legend>
@@ -186,6 +187,9 @@ export class TodoManager {
 				
 			</form>
 		`;
+		} else {
+			return '';
+		}
 	}
 
 	renderDeleteIcon(todo) {

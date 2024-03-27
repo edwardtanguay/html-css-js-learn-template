@@ -14,7 +14,7 @@
 		- x hover green and red
 		- x when edit click display form, cancel goes back
 		- x make click edit work
-		- .. also hide add
+		- .. also hide add form
 		- .. enable form to edit 	
 
 - settings page
