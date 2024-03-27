@@ -543,14 +543,28 @@ div.constructionSignArea {
 }
 
 .todoApp .itemStarScore {
-		color: brown;
-		font-family: monospace;
-		background-color: #eee;
-		width: 2rem;
-		text-align: center;
+	color: brown;
+	font-family: monospace;
+	background-color: #eee;
+	width: 2rem;
+	text-align: center;
 }
 
 .todoApp .starTitle {
 	display: flex;
 	gap: .5rem;
+}
+
+.progressSpinner {
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }

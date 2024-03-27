@@ -28,7 +28,7 @@ export class TodoManager {
 				<div class="todo" >
 					<div class="starTitle">
 						<div class="itemStarScore">${todo.stars.toFixed(1)}</div>
-						<i class="fa fa-spinner" aria-hidden="true"></i>
+						<i class="fa fa-refresh progressSpinner" aria-hidden="true"></i>
 						<div class="title">${todo.title}</div>
 					</div>
 					${this.renderDeleteIcon(todo)}
