@@ -14,7 +14,7 @@ export class TodoManager {
 	}
 
 	render() {
-		this.todos.sort((a,b) => a.stars < b.stars ? 1 : -1)
+		this.todos.sort((a, b) => a.stars < b.stars ? 1 : -1);
 		this.mainElem.innerHTML = /*html*/ `
 <div class="todoApp">
 	<div class="header">
@@ -73,7 +73,7 @@ export class TodoManager {
 			const starScoreElem = document.querySelector('.todoApp .starScore');
 			const inProgressCheckboxElem = document.querySelector('.todoApp .inProgressCheckbox');
 			const formInProgressIconElem = document.querySelector('.todoApp .formInProgressIcon');
-			
+
 			starScoreElem.innerText = String(starsDefault.toFixed(1));
 			titleElem.focus();
 			formInProgressIconElem.innerHTML = this.renderProgressIcon(false);
@@ -92,16 +92,17 @@ export class TodoManager {
 			});
 
 			btnAddElem.addEventListener('click', () => {
-				const newTodo = {
-					suuid: tools.generateSuuid(),
-					title: titleElem.value,
-					stars: Number(sliderElem.value),
-					inProgress: inProgressCheckboxElem.checked
-				};
-				this.todos.push(newTodo);
-				console.log('todo', newTodo);
-				this.currentlyAddingTodo = false;
-				this.render();
+				if (titleElem.value.trim() !== '') {
+					const newTodo = {
+						suuid: tools.generateSuuid(),
+						title: titleElem.value,
+						stars: Number(sliderElem.value),
+						inProgress: inProgressCheckboxElem.checked
+					};
+					this.todos.push(newTodo);
+					this.currentlyAddingTodo = false;
+					this.render();
+				}
 			});
 		});
 		return /*html*/ `
@@ -128,8 +129,8 @@ export class TodoManager {
 					</div>
 
 					<div class="buttonArea">
-						<button class="btnCancel">Cancel</button>
-						<button class="btnAdd">Add</button>
+						<button type="button" class="btnCancel">Cancel</button>
+						<button type="button" class="btnAdd">Add</button>
 					</div>
 
 				</fieldset>

@@ -4,10 +4,11 @@
 
 - .. localstorage page
 	- x show spinner on add
-	- .. order by stars
+	- x order by stars
+	- .. don't add if blank
 	- save in localStorage
 	- load from localStorage
-	
+	- add 	
 
 - settings page
 	- dark mode
