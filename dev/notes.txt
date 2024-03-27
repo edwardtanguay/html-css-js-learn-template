@@ -7,8 +7,12 @@
 	- x order by stars
 	- x don't add if blank
 	- x save in localStorage
-	- .. load from localStorage
-	- add 	
+	- x load from localStorage
+	- .. reset to default todos
+	- .. enable edit
+		- .. create edit icon
+		- when edit click display form, cancel goes back
+		- enable form to edit 	
 
 - settings page
 	- dark mode

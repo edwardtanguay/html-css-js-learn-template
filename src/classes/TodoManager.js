@@ -13,7 +13,20 @@ export class TodoManager {
 		this.render();
 	}
 
+	resetAppData() {
+		localStorage.removeItem('todos');
+		this.loadInitialData();
+	}
+
 	render() {
+		setTimeout(() => {
+			const btnResetAppElem = document.querySelector(`.todoApp .btnResetApp`);
+
+			btnResetAppElem.addEventListener('click', () => {
+				this.resetAppData();
+			});
+		});
+
 		this.todos.sort((a, b) => a.stars < b.stars ? 1 : -1);
 		this.mainElem.innerHTML = /*html*/ `
 <div class="todoApp">
@@ -35,10 +48,10 @@ export class TodoManager {
 				</div> 
 				`;
 		}).join('')}
-			</div>
-			<div>
-			</div>
+		<div class="buttonPanel">
+			<button type="button" class="btnResetApp">Reset app to default todos</button>
 		</div>
+	</div>
 		`;
 	}
 
