@@ -572,3 +572,8 @@ div.constructionSignArea {
 		transform: rotate(360deg);
 	}
 }
+
+.todoApp .addForm fieldset .inProgressArea {
+	display: flex;
+	gap: .5rem;
+}

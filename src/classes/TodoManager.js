@@ -1,6 +1,5 @@
 import * as appData from '../appData.js';
 import * as tools from '../tools.js';
-import * as config from '../config.js';
 
 export class TodoManager {
 	constructor(mainElem) {
@@ -28,7 +27,7 @@ export class TodoManager {
 				<div class="todo" >
 					<div class="starTitle">
 						<div class="itemStarScore">${todo.stars.toFixed(1)}</div>
-						<i class="fa fa-refresh ${todo.inProgress ? 'progressCurrent' : 'progressStopped'}" aria-hidden="true"></i>
+						${this.renderProgressIcon(todo)}
 						<div class="title">${todo.title}</div>
 					</div>
 					${this.renderDeleteIcon(todo)}
@@ -39,6 +38,12 @@ export class TodoManager {
 			<div>
 			</div>
 		</div>
+		`;
+	}
+
+	renderProgressIcon(todo) {
+		return /*html*/ `
+		<i class="fa fa-refresh ${todo.inProgress ? 'progressCurrent' : 'progressStopped'}" aria-hidden="true"></i>
 		`;
 	}
 
@@ -107,7 +112,11 @@ export class TodoManager {
 							<div class="max">5</div>
 						</div>
 						<div class="inProgressArea">
-							<input type="checkbox" class="inProgressCheckbox" id="inProgressCheckbox"> <label for="inProgressCheckbox" class="inProgressText">In Progress</label>
+							<div>
+								<input type="checkbox" class="inProgressCheckbox" id="inProgressCheckbox"> <label for="inProgressCheckbox" class="inProgressText">In Progress</label>
+								<div class="formInProgressIcon"></div>
+							</div>
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
 						</div>
 					</div>
 
