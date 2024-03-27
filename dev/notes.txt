@@ -8,9 +8,10 @@
 	- x don't add if blank
 	- x save in localStorage
 	- x load from localStorage
-	- .. reset to default todos
+	- x reset to default todos
 	- .. enable edit
-		- .. create edit icon
+		- x create edit icon
+		- .. hover green and red
 		- when edit click display form, cancel goes back
 		- enable form to edit 	
 

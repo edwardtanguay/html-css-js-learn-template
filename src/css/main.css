@@ -519,11 +519,6 @@ div.constructionSignArea {
 	justify-content: space-between;
 }
 
-.todoApp .todos .todo .deleteIcon {
-	cursor: pointer;
-}
-
-
 .todoApp .addArea {
 	display: flex;
 	justify-content: center;
@@ -588,4 +583,27 @@ div.constructionSignArea {
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 1rem;
+}
+
+.todoApp .manageIcons {
+	display: flex;
+	gap:.5rem;
+}
+
+.todoApp .manageIcons .deleteIcon {
+	color: rgb(150, 5, 5);
+	cursor: pointer;
+}
+
+.todoApp .manageIcons .deleteIcon:hover {
+	color: red;
+}
+
+.todoApp .manageIcons .editIcon {
+	color: rgb(4, 104, 4);
+	cursor: pointer;
+}
+
+.todoApp .manageIcons .editIcon:hover {
+	color: rgb(36, 153, 36);
 }

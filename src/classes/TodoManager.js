@@ -44,7 +44,10 @@ export class TodoManager {
 						${this.renderProgressIcon(todo.inProgress)}
 						<div class="title">${todo.title}</div>
 					</div>
-					${this.renderDeleteIcon(todo)}
+					<div class="manageIcons">
+						${this.renderEditIcon(todo)}
+						${this.renderDeleteIcon(todo)}
+					</div>
 				</div> 
 				`;
 		}).join('')}
@@ -171,6 +174,20 @@ export class TodoManager {
 
 		return /*html*/ `
 			<i class="fa fa-trash-o deleteIcon ${className}" aria-hidden="true"></i>
+		`;
+	}
+
+	renderEditIcon(todo) {
+		const className = `editIcon-${todo.suuid}`;
+		setTimeout(() => {
+			const editIconElem = document.querySelector(`.todoApp .${className}`);
+			editIconElem.addEventListener('click', () => {
+				alert('edit clicked for ' + todo.suuid)
+			});
+		});
+
+		return /*html*/ `
+			<i class="fa fa-pencil editIcon ${className}" aria-hidden="true"></i>
 		`;
 	}
 
