@@ -171,6 +171,7 @@ export class TodoManager {
 					} else {
 						editTodo.title = titleElem.value;
 						editTodo.stars = Number(sliderElem.value);
+						editTodo.inProgress = inProgressCheckboxElem.checked;
 						this.cancelAllEditingOfTodos();
 						this.saveInLocalStorage();
 						this.render();
