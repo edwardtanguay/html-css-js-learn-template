@@ -205,16 +205,25 @@ div.employee .notes {
 }
 
 div.errorMessage {
-	background-color: rgb(192, 31, 2);
-	color: yellow;
-	padding: 1rem;
+	display: flex;
+	border: 1px solid #000;
+	background-color: #333;
 	border-radius: .5rem;
 	width: fit-content;
+	padding: 0 .8rem;
+	place-items: center;
+	gap:.5rem;
 }
 
-div.errorMessage h3 {
-	color: black;
-	font-weight: bold;
+div.errorMessage p {
+	margin: 0;
+	padding: 0;
+	color: yellow;
+}
+
+div.errorMessage i {
+	color: orange;
+	font-size: 1.4rem;
 }
 
 /* JOBS */

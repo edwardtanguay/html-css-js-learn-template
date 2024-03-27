@@ -1,5 +1,4 @@
 import { FullJob } from "./FullJob.js";
-import * as config from '../config.js';
 
 export const FullJobs = (fullJobs) => {
 

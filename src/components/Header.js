@@ -15,7 +15,6 @@ export const Header = () => {
 		}
 	});
 
-
 	setTimeout(() => {
 		const menuItemElem = document.querySelector('.menuIcon');
 		const navElem = document.querySelector('nav');

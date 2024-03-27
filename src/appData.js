@@ -1,6 +1,7 @@
 import * as appData from './appData.js';
 import { generalErrorMessage } from "./config.js";
 import * as config from './config.js';
+import * as tools from './tools.js';
 
 export const getEmployees = () => {
 	return new Promise((resolve, reject) => {
@@ -9,6 +10,9 @@ export const getEmployees = () => {
 				const response = await fetch('/src/data/employees.json');
 				const employees = await response.json();
 				if (response.ok) {
+					if (tools.shouldThrowRandomSimulateError()) {
+						throw new Error("SIMULATED ERROR");
+					}
 					resolve(employees);
 				} else {
 					console.log('ERROR', e);
@@ -72,6 +76,9 @@ export const getFullJobs = () => {
 				const jobs = await appData.getJobs();
 				const skills = await appData.getSkills();
 				const fullJobs = convertJobsAndSkillsToFullJobs(jobs, skills);
+				if (tools.shouldThrowRandomSimulateError()) {
+					throw new Error("SIMULATED ERROR");
+				}
 				resolve(fullJobs);
 			}
 			catch (e) {
