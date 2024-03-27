@@ -127,11 +127,13 @@ export class TodoManager {
 				const formInProgressIconElem = document.querySelector('.todoApp .formInProgressIcon');
 
 				if (formStatus === 'edit') {
-					console.log('titleElem', titleElem);
 					titleElem.value = editTodo.title;
+					sliderElem.value = editTodo.stars;
+					starScoreElem.innerText = String(editTodo.stars);
+				} else {
+					starScoreElem.innerText = String(starsDefault.toFixed(1));
 				}
 
-				starScoreElem.innerText = String(starsDefault.toFixed(1));
 				titleElem.focus();
 				formInProgressIconElem.innerHTML = this.renderProgressIcon(false);
 
