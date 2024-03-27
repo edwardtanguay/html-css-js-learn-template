@@ -1,7 +1,5 @@
 # html-css-js-learn-template
 
-## project links
-
 -   repo: https://github.com/edwardtanguay/html-css-js-learn-template
 -   live: https://html-css-js-learn-template.vercel.app
 
