@@ -33,7 +33,7 @@
 -   **responsive** design including mobile hambuger menu
 -   **Font Awesome** icons
 -   can be easily **published to Vercel**
--   has a similar **site structure** to JavaScript frameworks:
+-   has a similar **site structure** to **JavaScript frameworks**:
 
 ![siteStructure](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/98431769-6bb2-40ee-939f-00b0a17d5608)
 ![frameworkStructure](https://github.com/edwardtanguay/html-css-js-learn-template/assets/446574/524fdd89-a85f-4f7e-ad3f-7c43877e79ff)
