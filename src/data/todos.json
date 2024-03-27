@@ -2,22 +2,22 @@
 	{
 		"suuid": "RtbYbw",
 		"title": "Learn Astro",
-		"stars": 1.1,
+		"stars": 3.1,
 		"inProgress": true,
 		"userIsEditing": false
 	},
 	{
 		"suuid": "ZzORWF",
 		"title": "Go to store",
-		"stars": 2.5,
-		"inProgress": false,
+		"stars": 3.5,
+		"inProgress": true,
 		"userIsEditing": false
 	},
 	{
 		"suuid": "qSl64B",
 		"title": "Run a 5K",
-		"stars": 3.1,
-		"inProgress": true,
+		"stars": 2.9,
+		"inProgress": false,
 		"userIsEditing": false
 	}
 ]
