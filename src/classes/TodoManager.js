@@ -108,6 +108,12 @@ export class TodoManager {
 		localStorage.setItem('todos', JSON.stringify(this.todos));
 	}
 
+	cancelAllEditingOfTodos() {
+		for (const todo of this.todos) {
+			todo.userIsEditing = false;
+		}
+	}
+
 	renderAddForm(formStatus = 'add') {
 		if (formStatus === 'edit' || (formStatus === 'add' && !this.userIsEditingATodo())) {
 			setTimeout(() => {
@@ -130,6 +136,7 @@ export class TodoManager {
 
 				btnCancelElem.addEventListener('click', () => {
 					this.currentlyAddingTodo = false;
+					this.cancelAllEditingOfTodos();
 					this.render();
 				});
 
