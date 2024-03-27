@@ -1,7 +1,6 @@
 body {
 	padding: 2rem;
 	font-family: sans-serif;
-	background-color: #ccc;
 }
 
 h1 {
@@ -16,7 +15,7 @@ h1 a {
 h2 {
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
-	color: brown;
+	color: rgb(172, 91, 16);
 }
 
 h2:not(:first-of-type) {

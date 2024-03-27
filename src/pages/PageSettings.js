@@ -1,12 +1,15 @@
 import * as appData from '../appData.js';
+import { SiteManager } from '../classes/SiteManager.js';
 
 export const PageSettings = () => {
 	const siteMode = appData.getSiteMode();
+	const siteManager = new SiteManager();
 
 	setTimeout(async () => {
 		const siteModeSelectorElem = document.querySelector('.siteModeSelector');
 		siteModeSelectorElem.addEventListener('change', (e) => {
 			appData.setSiteMode(e.target.value);
+			siteManager.applySiteMode();
 		});
 	}, 0);
 
