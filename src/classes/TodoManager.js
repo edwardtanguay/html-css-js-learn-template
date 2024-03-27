@@ -88,18 +88,22 @@ export class TodoManager {
 	}
 
 	renderAddArea() {
-		setTimeout(() => {
-			const btnAddNewTodo = document.querySelector(`.todoApp .btnAddNewTodo`);
-			btnAddNewTodo.addEventListener('click', () => {
-				this.currentlyAddingTodo = true;
-				this.render();
+		if (!this.userIsEditingATodo()) {
+			setTimeout(() => {
+				const btnAddNewTodo = document.querySelector(`.todoApp .btnAddNewTodo`);
+				btnAddNewTodo.addEventListener('click', () => {
+					this.currentlyAddingTodo = true;
+					this.render();
+				});
 			});
-		});
-		return /*html*/ `
+			return /*html*/ `
 			<div class="addArea">
 				<button class="btnAddNewTodo"><i class="fa fa-plus" aria-hidden="true"></i> Add new todo</button>
 			</div>
 		`;
+		} else {
+			return '';
+		}
 	}
 
 	saveInLocalStorage() {

@@ -13,7 +13,8 @@
 		- x create edit icon
 		- x hover green and red
 		- x when edit click display form, cancel goes back
-		- make click edit work
+		- x make click edit work
+		- .. also hide add
 		- .. enable form to edit 	
 
 - settings page

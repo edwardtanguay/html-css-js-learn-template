@@ -530,11 +530,12 @@ div.constructionSignArea {
 	margin-bottom: 1rem;
 	border: solid 1px #777;
 	border-radius: 6px;
-	background-color: #d9d9d9;
+	background-color: rgb(231, 228, 182);
 }
 
 .todoApp .addForm fieldset legend {
 	font-variant: small-caps;
+	font-weight: bold;
 }
 
 .todoApp .itemStarScore {
@@ -587,7 +588,7 @@ div.constructionSignArea {
 
 .todoApp .manageIcons {
 	display: flex;
-	gap:.5rem;
+	gap: .5rem;
 }
 
 .todoApp .manageIcons .deleteIcon {
@@ -610,4 +611,27 @@ div.constructionSignArea {
 
 .todoApp .btnResetApp {
 	color: rgb(150, 5, 5);
+}
+
+.todoApp .addForm fieldset .buttonArea button.btnAdd {
+	background-color: #ccc;
+	border-radius: .5rem;
+}
+
+.todoApp .addForm fieldset .buttonArea button.btnAdd:hover {
+	background-color: #c0c0c0;
+}
+
+.todoApp .addForm fieldset .buttonArea button.btnCancel {
+	background-color: #ccc;
+	border-radius: .5rem;
+}
+
+.todoApp .addForm fieldset .buttonArea button.btnCancel:hover {
+	background-color: #c0c0c0;
+}
+
+
+.todoApp .addForm fieldset .starScore {
+	background-color: rgb(214, 211, 185);
 }
