@@ -14,8 +14,11 @@
 		- x hover green and red
 		- x when edit click display form, cancel goes back
 		- x make click edit work
-		- .. also hide add form
+		- x also hide add form
 		- .. enable form to edit 	
+			- .. change all edits over
+				- x text and color
+				- cancel button
 
 - settings page
 	- dark mode

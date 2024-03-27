@@ -530,7 +530,23 @@ div.constructionSignArea {
 	margin-bottom: 1rem;
 	border: solid 1px #777;
 	border-radius: 6px;
+}
+
+
+.todoApp .statusAdd fieldset {
 	background-color: rgb(231, 228, 182);
+}
+
+.todoApp .statusEdit fieldset {
+	background-color: rgb(162, 206, 169);
+}
+
+.todoApp .statusAdd fieldset .starScore {
+	background-color: rgb(247, 242, 182);
+}
+
+.todoApp .statusEdit fieldset .starScore {
+	background-color: rgb(216, 238, 211);
 }
 
 .todoApp .addForm fieldset legend {
@@ -631,7 +647,3 @@ div.constructionSignArea {
 	background-color: #c0c0c0;
 }
 
-
-.todoApp .addForm fieldset .starScore {
-	background-color: rgb(214, 211, 185);
-}

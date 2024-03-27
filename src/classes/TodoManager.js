@@ -75,9 +75,7 @@ export class TodoManager {
 				</div> 
 			`;
 		} else {
-			return /*html*/ `
-				<div>editing</div>
-			`;
+			return this.renderAddForm('edit');
 		}
 	}
 
@@ -110,8 +108,8 @@ export class TodoManager {
 		localStorage.setItem('todos', JSON.stringify(this.todos));
 	}
 
-	renderAddForm() {
-		if (!this.userIsEditingATodo()) {
+	renderAddForm(formStatus = 'add') {
+		if (formStatus === 'edit' || (formStatus === 'add' && !this.userIsEditingATodo())) {
 			setTimeout(() => {
 				const starsDefault = 3;
 				const titleElem = document.querySelector('.todoApp .title');
@@ -135,7 +133,7 @@ export class TodoManager {
 					this.render();
 				});
 
-				sliderElem.addEventListener('change', () => {
+				sliderElem.addEventListener('input', () => {
 					starScoreElem.innerText = Number(sliderElem.value).toFixed(1);
 				});
 
@@ -156,9 +154,9 @@ export class TodoManager {
 			});
 
 			return /*html*/ `
-			<form class="addForm">
+			<form class="addForm ${formStatus === 'add' ? 'statusAdd' : 'statusEdit'}">
 				<fieldset>
-					<legend>New Todo</legend>
+					<legend>${formStatus === 'add' ? 'Add Todo' : 'Edit Todo'}</legend>
 
 					<input type="text" class="title" >
 
