@@ -58,7 +58,7 @@ export const PageSettings = () => {
 				<option value="yes" ${simulateErrors === 'yes' ? 'selected' : ''}>yes</option>
 				<option value="no" ${simulateErrors === 'no' ? 'selected' : ''}>no</option>
 			</select>
-			<div class="info"><i>This will randomly an data-loading error (50/50) in the pages with API calls ("Local JSON Data" and "External API Data") so you can see how errors are handled.</i></div>
+			<div class="info"><i>This will randomly (50% of the time) produce a data-loading error in the pages with API calls ("Local JSON Data" and "External API Data") so you can see how errors are handled.</i></div>
 		</div>
 	</form>
 </section>

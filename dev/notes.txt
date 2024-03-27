@@ -4,6 +4,7 @@
 
 - settings page
 	- .. simulate random data loading errors: yes | no
-		- .. make form control first
+		- x make form control first
+		- .. handle yes
 
 - copy home page text to repository readme
