@@ -154,8 +154,21 @@ export const getSiteMode = () => {
 	} else {
 		return config.defaultSiteMode();
 	}
-}
+};
 
 export const setSiteMode = (siteMode) => {
 	localStorage.setItem('siteMode', siteMode);
-}
+};
+
+export const getMockWaitSeconds = () => {
+	const _mockWaitSeconds = localStorage.getItem('mockWaitSeconds');
+	if (_mockWaitSeconds) {
+		return Number(_mockWaitSeconds);
+	} else {
+		return config.defaultMockWaitSeconds();
+	}
+};
+
+export const setMockWaitSeconds = (mockWaitSeconds) => {
+	localStorage.setItem('mockWaitSeconds', mockWaitSeconds);
+};

@@ -3,13 +3,20 @@ import { SiteManager } from '../classes/SiteManager.js';
 
 export const PageSettings = () => {
 	const siteMode = appData.getSiteMode();
+	const mockWaitSeconds = appData.getMockWaitSeconds();
 	const siteManager = new SiteManager();
 
 	setTimeout(async () => {
 		const siteModeSelectorElem = document.querySelector('.siteModeSelector');
+		const mockWaitSecondsSelector = document.querySelector('.mockWaitSecondsSelector');
+
 		siteModeSelectorElem.addEventListener('change', (e) => {
 			appData.setSiteMode(e.target.value);
 			siteManager.applySiteMode();
+		});
+
+		mockWaitSecondsSelector.addEventListener('change', (e) => {
+			appData.setMockWaitSeconds(Number(e.target.value));
 		});
 	}, 0);
 
@@ -18,10 +25,24 @@ export const PageSettings = () => {
 	<p class="intro">This this is site settings page which demonstrates how to allow the user to change the functionality of the site itself, e.g. setting dark/light mode, setting a mock number of seconds that the data-loading pages should take to load in order to see how the loading spinner looks, and creating a mock error on the data-loading pages to see how error handling works.</p>
 
 	<form class="siteSettings">
-		<select class="siteModeSelector">
-			<option value="dark" ${siteMode === 'dark' ? 'selected' : ''}>dark mode</option>
-			<option value="light" ${siteMode === 'light' ? 'selected' : ''}>light Mode</option>
-		</select>
+
+		<div class="area siteModeArea">
+			Display: 
+			<select class="siteModeSelector">
+				<option value="dark" ${siteMode === 'dark' ? 'selected' : ''}>dark mode</option>
+				<option value="light" ${siteMode === 'light' ? 'selected' : ''}>light Mode</option>
+			</select>
+		</div>
+
+		<div class="area mockWaitArea">
+			Mock wait: 
+			<select class="mockWaitSecondsSelector">
+				<option value="0" ${mockWaitSeconds === 0 ? 'selected' : ''}>none</option>
+				<option value="1" ${mockWaitSeconds === 1 ? 'selected' : ''}>1 second</option>
+				<option value="3" ${mockWaitSeconds === 3 ? 'selected' : ''}>3 seconds</option>
+				<option value="5" ${mockWaitSeconds === 5 ? 'selected' : ''}>5 seconds</option>
+			</select>
+		</div>
 	</form>
 </section>
 	`;

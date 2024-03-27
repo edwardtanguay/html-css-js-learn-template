@@ -29,3 +29,7 @@ export const determineResponsiveStatus = () => {
 export const defaultSiteMode = () => {
 	return 'light';
 }
+
+export const defaultMockWaitSeconds = () => {
+	return 0;
+}

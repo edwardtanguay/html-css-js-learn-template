@@ -3,11 +3,7 @@
 	- LIVE: https://html-css-js-learn-template.vercel.app
 
 - settings page
-	- .. dark mode
-		- x make dropdown
-		- .. make SiteManager and process for light/dark mode
-	
-	- simulate data loading time: 1, 3, 5 seconds
+	- .. simulate data loading time: 1, 3, 5 seconds
 	- simulate data loading errors: yes | no
 
 - correct all pageIdCodes

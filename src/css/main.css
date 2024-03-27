@@ -653,3 +653,7 @@ div.constructionSignArea {
 .siteSettings {
 	margin-top: 1.5rem;
 }
+
+.pageSettings .area {
+	margin-bottom: 1rem;
+}
